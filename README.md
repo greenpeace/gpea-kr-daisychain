@@ -21,16 +21,13 @@ During the build, the project will pull the basic campaign data from the schema 
 ```text
 src/
 └── apps/
-    ├── hk/
+    ├── kr/
     │   ├── project1/
     │   └── project2/
-    └── tw/
-        ├── project1/
-        └── project2/
 ```
 
 1. Go to `apps` folder and you will see the project folder groupped by NRO.
-2. Duplicate the entire project folder (e.g `/apps/hk/arctic`) and rename it to a new project name.
+2. Duplicate the entire project folder (e.g `/apps/kr/arctic`) and rename it to a new project name.
 3. Modify the Banner / Thankyou content, the content will be used on the Hero landing section (first screen area).
 4. Modify the `Content.js` and `Thankyou.js`, the content will be used on the signup form and thankyou form.
 5. Modify the `SEO.js`, the content will become the page meta data (sharing content and image etc).
