@@ -1,0 +1,14 @@
+export const INIT_FORM = 'INIT_FORM';
+export const SET_FORM = 'SET_FORM';
+export const SET_FORM_SUCCESS = 'SET_FORM_SUCCESS';
+
+export const INIT_SUGGESTION = 'INIT_SUGGESTION';
+export const SET_SUGGESTION = 'SET_SUGGESTION';
+
+export const INIT_SIGNUP_NUMBERS = 'INIT_SIGNUP_NUMBERS';
+export const SET_SIGNUP_NUMBERS = 'SET_SIGNUP_NUMBERS';
+
+export const SET_SHOW_MESSAGE = 'SET_SHOW_MESSAGE';
+export const SET_DONATE_TYPE = 'SET_DONATE_TYPE';
+
+export const SET_FORM_DATA = 'SET_FORM_DATA';
