@@ -1,8 +1,8 @@
 import React from 'react';
-import { Spinner } from '@chakra-ui/react';
+import { Spinner as SP} from '@chakra-ui/react';
 
 const Spinner = ({ ...props }) => {
-  return <Spinner {...props} />;
+  return <SP {...props} />;
 };
 
 export default Spinner;
