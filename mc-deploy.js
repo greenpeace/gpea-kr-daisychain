@@ -27,7 +27,7 @@ console.log(`===========================> mc-deploy`);
 
 const buildFolder = path.join(__dirname, 'out');
 
-const ftpRemoteDir = path.join(process.env.BASEPATH, process.env.CAMPAIGN, process.env.ENV_PARAM);
+const ftpRemoteDir = path.join(process.env.BASEPATH, (process.env.IS_AB_TEST == 'Y')? process.env.ROOT_AB_TEST_DIR : process.env.CAMPAIGN, process.env.ENV_PARAM);
 
 let indexHtmlFilePath = path.join(buildFolder, 'index.html');
 let fbuf = fs.readFileSync(indexHtmlFilePath);

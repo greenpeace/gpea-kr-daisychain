@@ -7,7 +7,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const isFull = process.env.NODE_ENV === 'development';
 console.info('=======================> next.config');
 console.info('process.env.NODE_ENV',process.env.NODE_ENV);
-console.info('assetPrefix', `${process.env.ASSETPREFIX}/` + path.join(process.env.CAMPAIGN, process.env.ENV_PARAM));
+console.info('assetPrefix', `${process.env.ASSETPREFIX}/` + path.join((process.env.IS_AB_TEST == 'Y')? process.env.ROOT_AB_TEST_DIR : process.env.CAMPAIGN, process.env.ENV_PARAM));
 console.info('=======================> next.config');
 
 const nextConfig = {
@@ -23,9 +23,11 @@ const nextConfig = {
     donateModule: process.env.DONATE_MODULE,
     dummyEndpoint: `https://cors-anywhere.small-service.gpeastasia.org/https://cloud.greenhk.greenpeace.org/websign-dummy`,
     assetPrefix: process.env.ASSETPREFIX,
+    is_ab_test: process.env.IS_AB_TEST,
+    root_ab_test_dir: process.env.ROOT_AB_TEST_DIR
   },
   // FIXME: Use the CDN in production and localhost for development.
-  assetPrefix: (isProd || isFull) ? `${process.env.ASSETPREFIX}/` + path.join(process.env.CAMPAIGN, process.env.ENV_PARAM) : '',
+  assetPrefix: (isProd || isFull) ? `${process.env.ASSETPREFIX}/` + path.join((process.env.IS_AB_TEST == 'Y')? process.env.ROOT_AB_TEST_DIR : process.env.CAMPAIGN, process.env.ENV_PARAM) : '',
   trailingSlash: true,
   exportPathMap: async () => ({
     '/': { page: '/' },

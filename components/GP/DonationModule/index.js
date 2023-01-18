@@ -54,7 +54,7 @@ const DonationModule = (props) => {
   //FIXME: Define constant module url => overrides [next.config.json] !!!!!!!!!!!!!!!!!!!!!!!!!!!
   let moduleUrl = '';
   if (process.env.envParam === 'production' || process.env.envParam === 'full') {
-    moduleUrl = `${process.env.assetPrefix}/` + path.join(process.env.campaign, process.env.envParam, 'main.js');//`https://gpseoulwebserver.co.kr/dchain/nuke/production/main.js`;
+    moduleUrl = `${process.env.assetPrefix}/` + path.join((process.env.is_ab_test == 'Y')? process.env.root_ab_test_dir : process.env.campaign, process.env.envParam, 'main.js');//`https://gpseoulwebserver.co.kr/dchain/nuke/production/main.js`;
   } else {
     moduleUrl = `${window.location.href}/main.js`;
   }
