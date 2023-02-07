@@ -34,7 +34,7 @@ const SEO = () => {
       />
       <meta
         property="og:image"
-        content="https://gpseoulwebserver.co.kr/dchain/honeybee/full/_next/static/images/GP0STU61Y_PressMedia-f6ef92824ecd8c12ce30db0c92197abf.jpg"
+        content="https://gpseoulwebserver.co.kr/petitions/honeybee/honeybee-main.jpg"
       />
     </Head>
   );
