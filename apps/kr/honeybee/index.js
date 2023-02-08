@@ -120,6 +120,7 @@ function Index() {
                             market={'kr'}
                             language={'ko_KR'}
                             campaign={process.env.campaign}
+                            campaignId={theme?.data?.CampaignId}
                             env={process.env.envParam}
                           />
                         ) : (
@@ -151,7 +152,7 @@ function Index() {
                           // campaign={
                           //   theme?.params?.donation_module_campaign ?? 'nuke'
                           // }
-                          // campaignId={''}
+                          campaignId={theme?.data?.CampaignId}
                           env={process.env.envParam}
                         />
                       ) : (
