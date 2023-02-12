@@ -521,7 +521,7 @@ const MyEnhancedForm = withFormik({
       UtmContent: fallbackValue(hiddenFormData.utm_content),
       UtmTerm: fallbackValue(hiddenFormData.utm_term),
       MobileCountryCode: '',
-      CampaignId: isProd ? theme.CampaignId : '7012u000000OxDYAA0',
+      CampaignId: theme.CampaignId,
       LeadSource: LeadSource,
       req: 'post_data',
       [`Petition_Interested_In_${capitalize(theme.interests)}__c`]: true,
