@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Form, isFunction, withFormik } from 'formik';
 import { connect } from 'react-redux';
 import { Field } from '@components/Field/fields';
@@ -76,7 +76,7 @@ const MyForm = (props) => {
     }
     fetchOptionYear(optionYear);
     initSuggestion();
-  }, []);
+  }, [initSuggestion]);
 
   useEffect(() => {
     const currentNumber = numberOfResponses;
@@ -92,7 +92,7 @@ const MyForm = (props) => {
     return () => {
       clearTimeout(timerId);
     };
-  }, [numberOfResponses]);
+  }, [numberOfResponses, numberOfTarget]);
 
   useEffect(() => {
     if (signup.submitted) {
@@ -104,7 +104,7 @@ const MyForm = (props) => {
       }
       setPopupOpen(true);
     }
-  }, [signup.submitted]);
+  }, [signup.submitted, setWebStatus, signup.lastAction]);
 
   const mailSuggestion = (value) => {
     const domains = [
@@ -152,7 +152,7 @@ const MyForm = (props) => {
       }
     }
     console.log(values);
-  }, [popupOpen]);
+  }, [popupOpen, clearForm, signup, resetForm, setWebStatus, values]);
 
   useEffect(() => {
     if (Object.keys(formContent).length > 0) {
@@ -164,9 +164,9 @@ const MyForm = (props) => {
         formContent.contact_time.map((d) => d.value),
       );
     }
-  }, [formContent]);
+  }, [formContent, setFieldValue]);
 
-  const resetForm = (resetAll) => {
+  const resetForm = useCallback((resetAll) => {
     values.FirstName = '';
     values.LastName = '';
     values.Email = '';
@@ -197,7 +197,7 @@ const MyForm = (props) => {
     [].forEach.call(document.getElementsByName('CampaignData4__c'), (item) => {
       item.checked = true;
     });
-  };
+  },[formContent, setFieldValue, values]);
 
   return (
     <Box py="8" px="4">

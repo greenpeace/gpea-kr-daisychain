@@ -11,6 +11,7 @@ import {
 import Image01 from './images/GP0STU61Y_PressMedia.jpg';
 import Image02 from './images/GP01B4T_PressMedia.jpg';
 import Image03 from './images/GP1STQ8D_PressMedia.jpg';
+import Image04 from './images/honeybee-event.jpg';
 
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
@@ -22,7 +23,7 @@ const Content = ({ theme }) => {
       </Heading>
 
       <Text as="p" {...paragraphProps}>
-        2010년, 국내 토종벌의 90%가 전염병으로 사라진 데 이어 2022년 초에는 국내 꿀벌 78억 마리가 사라졌습니다.
+        2010년, 국내 토종벌의 90%가 전염병으로 사라진 데 이어 2022년 초에는 국내 꿀벌 78억 마리가 사라졌습니다. 호박벌을 비롯한 야생벌 대다수는 적절한 보호도 받지 못하고 있습니다.
       </Text>
       
       <Box {...paragraphProps}>
@@ -30,8 +31,8 @@ const Content = ({ theme }) => {
       </Box>
 
       <Text as="p" {...paragraphProps}>
-      전문가들은 2023년 초에 훨씬 더 많은 꿀벌들이 사라질 수 있다고 경고합니다. 꿀벌은 우리가 먹는 고추, 아몬드를 비롯하여 가축의 먹이까지, 우리 식량 71%의 수분을 담당하기에 농가에도 비상이 걸렸습니다.
-기후변화, 응애, 살충제 등 꿀벌이 사라지는 이유는 많습니다. 그 중에서도 가장 시급한 문제는 꿀벌의 먹이입니다. 꿀벌의 먹이가 부족해 면역력이 약해지고 있습니다.
+      전문가들은 2023년 초에 훨씬 더 많은 꿀벌들이 사라질 수 있다고 경고합니다. 꿀벌은 우리가 먹는 과일과 채소를 비롯하여 가축의 먹이까지, 우리 식량 71%의 수분을 담당하기에 농가에도 비상이 걸렸습니다.
+기후변화, 응애, 살충제 등 꿀벌이 사라지는 이유는 많습니다. 그 중에서도 가장 시급한 문제는 꿀벌의 먹이입니다. 꿀벌의 먹이가 부족해, 각종 질병과 기생충, 살충제에 꿀벌은 더욱 취약해지고 있습니다.
       </Text>
 
       <Text as="p" {...paragraphProps}>
@@ -64,11 +65,11 @@ const Content = ({ theme }) => {
       </Text>
 
       <Text as="li" {...lineProps}>
-      지속가능한 양봉업을 위한 국내 밀원수 확충 및 관리
+      지속가능한 양봉업과 농업업을 위한 국내 밀원수 확충 및 관리
       </Text>
 
       <Text as="li" {...lineProps}>
-      지속가능한 농업과 생태계 보호를 위한 벌 등 수분 매개체 서식지 확보
+      생태계 보호를 위한 벌 등 수분 매개체 서식지 확보
       </Text>
 
       <Text as="li" {...lineProps}>
@@ -87,6 +88,14 @@ const Content = ({ theme }) => {
 
       <Text as="p" {...paragraphProps}>
       여러분의 청원은 국무총리 산하 ‘꿀벌 살리기 위원회’의 구축을 요구하는데 활용됩니다. 많은 관심과 참여 부탁드립니다.
+      </Text>
+
+      <Box {...paragraphProps}>
+        <Image src={Image04} layout="fill" alt="Greenpeace" />
+      </Box>
+
+      <Text as="p" {...paragraphProps}>
+      5월 20일까지 참여해주신 분 중 10명을 추첨하여 꿀벌에게 필요한 꽃이 피는 씨앗폭탄을 선물로 드립니다. (당첨자 개별 연락)
       </Text>
 
     </>
