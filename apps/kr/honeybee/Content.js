@@ -82,19 +82,19 @@ const Content = ({ theme }) => {
 꿀벌을 지켜 식량안보가 확보된 대한민국을 만들어 주시기 바랍니다. 감사합니다.
       </Text>
 
-      <Box {...paragraphProps}>
+      {/* <Box {...paragraphProps}>
         <Image src={Image03} layout="fill" alt="Greenpeace" />
-      </Box>
+      </Box> */}
 
       <Text as="p" {...paragraphProps}>
       여러분의 청원은 국무총리 산하 ‘꿀벌 살리기 위원회’의 구축을 요구하는데 활용됩니다. 많은 관심과 참여 부탁드립니다.
       </Text>
 
-      <Box {...paragraphProps}>
+      <Box {...paragraphProps} style={{border: '2px solid #000'}}>
         <Image src={Image04} layout="fill" alt="Greenpeace" />
       </Box>
 
-      <Text as="p" {...paragraphProps}>
+      <Text as="p" {...paragraphProps} style={{fontWeight: "bold"}}>
       5월 20일까지 참여해주신 분 중 10명을 추첨하여 꿀벌에게 필요한 꽃이 피는 씨앗폭탄을 선물로 드립니다. (당첨자 개별 연락)
       </Text>
 
