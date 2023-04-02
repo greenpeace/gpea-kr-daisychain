@@ -3,6 +3,10 @@ import * as signupActions from 'store/actions/action-types/signup-actions';
 import * as statusActions from 'store/actions/action-types/status-actions';
 
 import * as helper from '@common/utils/helper';
+import {
+  pushToDataLayer,
+  pushToDataLayerGA4
+} from '@common/components/TrackingUtils';
 
 export function* submitForm(actions) {
   const state = yield select();
@@ -40,7 +44,15 @@ export function* submitForm(actions) {
       // Tracking
       if (ProjectName || EventLabel) {
         //console.log('submitted:', `${EventLabel ? EventLabel : ProjectName}`);
-        helper.sendPetitionTracking('petition_complete', `${EventLabel ? EventLabel : ProjectName}`);
+        pushToDataLayer({event:'petition_complete', petition_name:`${EventLabel ? EventLabel : ProjectName}`})
+        pushToDataLayerGA4({
+          event: 'custom_event',
+          event_name: 'petition_complete',
+          event_category: 'petitions',
+          event_action: 'signup', 
+          event_label: `${EventLabel ? EventLabel : ProjectName}`,
+          custom_metric: 'petition_complete'
+        });
       } else {
         console.log('Project undefined');
       }
