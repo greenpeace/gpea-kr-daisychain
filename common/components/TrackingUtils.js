@@ -54,9 +54,9 @@ const pushToDataLayerGA4 = ({
     event_label, 
     custom_metric
   }
-  console.log('pushToDataLayerGA4', {dataLayer: {
-    ...dataToPush,
-  }});
+//   console.log('pushToDataLayerGA4', {dataLayer: {
+//     ...dataToPush,
+//   }});
   TagManager.dataLayer({
     dataLayer: {
       ...dataToPush,
