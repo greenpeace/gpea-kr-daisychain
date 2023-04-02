@@ -11,11 +11,11 @@ import * as formActions from 'store/actions/action-types/form-actions';
 import * as statusActions from 'store/actions/action-types/status-actions';
 import * as signupActions from 'store/actions/action-types/signup-actions';
 import * as hiddenFormActions from 'store/actions/action-types/hidden-form-actions';
-
 import {
-  TagManagerArgs,
-  DevTagManagerArgs
-} from '@common/constants/tagManagerArgs';
+  initTagManager,
+  pushToDataLayer,
+  pushToDataLayerGA4
+} from '@common/components/TrackingUtils';
 
 /* Determine the returned project index by env variable */
 const DynamicComponent = dynamic(() => import(`apps/${process.env.project}`), {
@@ -27,25 +27,7 @@ const envProjectName = process.env.projectName;
 const envProjectMarket = process.env.projectMarket;
 const themeEndpointURL = process.env.themeEndpoint;
 const signupNumbersKRURL = process.env.signupNumbersKR;
-
-const initTagManager = (marketName) => {
-  if (process.env.NODE_ENV === 'production') {
-        TagManager.initialize(TagManagerArgs);
-  }
-   else { 
-        TagManager.initialize(DevTagManagerArgs); 
-  }
-};
-
-const sendPetitionTracking = (eventLabel) => {
-  window.dataLayer = window.dataLayer || [];
-
-  window.dataLayer.push({
-    event: eventLabel
-  });
-};
-
-function Index({
+ function Index({
   setTheme,
   themeData,
   setSignupNumbers,
@@ -154,8 +136,15 @@ function Index({
     /* GTM is only applicable for production env */
     initTagManager(market);
     setTheme(themeData);
-    sendPetitionTracking('petition_load');
-
+    pushToDataLayer({event:'petition_load'});
+    pushToDataLayerGA4({
+      event: 'custom_event',
+      event_name: 'petition_load',
+      event_category: 'petitions',
+      event_action: 'load', 
+      custom_metric: 'petition_load'
+    });
+    
     let FormObj = {};
     const selectForm = document.forms['mc-form'];
     const documentFormsArray = Array.from(selectForm);
