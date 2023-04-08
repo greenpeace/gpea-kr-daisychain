@@ -25,7 +25,8 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/GP0STSX96_PressMedia_ed.jpg';
+import heroBannerImagePC from './images/ryu_plastic_last.jpg';
+import heroBannerImageMB from './images/ryu_mobile.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -70,7 +71,7 @@ function Index() {
             return submitted ? (
               <ThanksBanner
                 defaultImage={
-                  theme?.params?.hero_image_desktop ?? heroBannerImage
+                  theme?.params?.hero_image_desktop ?? (isMobile)?heroBannerImageMB:heroBannerImagePC
                 }
                 content={{
                   title: `${
@@ -84,7 +85,7 @@ function Index() {
             ) : (
               <HeroBanner
                 defaultImage={
-                  theme?.params?.hero_image_desktop ?? heroBannerImage
+                  theme?.params?.hero_image_desktop ?? (isMobile)?heroBannerImageMB:heroBannerImagePC
                 }
                 content={{
                   title:
