@@ -205,7 +205,7 @@ export async function getStaticProps() {
     .then((response) => {
       return response.data.records.find(
         (d) =>
-          d.ProjectName === envProjectName && d.Market === envProjectMarket,
+        d.ProjectName === envProjectName && d.Market === envProjectMarket && d.EventLabel === envCampaign,
       );
     })
     .catch((error) => console.log(error));
