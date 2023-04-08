@@ -23,6 +23,7 @@ const DynamicComponent = dynamic(() => import(`apps/${process.env.project}`), {
 
 /* Get env variables */
 const envProjectName = process.env.projectName;
+const envCampaign = process.env.campaign;
 const envProjectMarket = process.env.projectMarket;
 const themeEndpointURL = process.env.themeEndpoint;
 const signupNumbersKRURL = process.env.signupNumbersKR;
