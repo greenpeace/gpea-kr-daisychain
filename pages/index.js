@@ -23,6 +23,7 @@ const DynamicComponent = dynamic(() => import(`apps/${process.env.project}`), {
 
 /* Get env variables */
 const envProjectName = process.env.projectName;
+const envCampaign = process.env.campaign;
 const envProjectMarket = process.env.projectMarket;
 const themeEndpointURL = process.env.themeEndpoint;
 const signupNumbersKRURL = process.env.signupNumbersKR;
@@ -205,7 +206,7 @@ export async function getStaticProps() {
     .then((response) => {
       return response.data.records.find(
         (d) =>
-          d.ProjectName === envProjectName && d.Market === envProjectMarket,
+          d.ProjectName === envProjectName && d.Market === envProjectMarket && d.EventLabel === envCampaign,
       );
     })
     .catch((error) => console.log(error));
