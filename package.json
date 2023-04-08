@@ -11,7 +11,6 @@
     "build:production": "cross-env NODE_ENV=production env-cmd -f .env.production next build",
     "export:full": "cross-env NODE_ENV=development env-cmd -f .env.development next export",
     "export:production": "cross-env NODE_ENV=production  env-cmd -f .env.production next export",
-    "start": "next start",
     "format": "prettier --write .",
     "deploy:full": "npm run clean && npm run build:full && npm run export:full && cross-env NODE_ENV=development  env-cmd -f .env.development node mc-deploy.js",
     "deploy:production": "npm run clean && npm run build:production && npm run export:production && cross-env NODE_ENV=production  env-cmd -f .env.production node mc-deploy.js",
