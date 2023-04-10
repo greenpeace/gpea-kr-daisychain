@@ -10,6 +10,7 @@ import {
 
 import Image01 from './images/amazon-content01.jpg';
 import Image02 from './images/amazon-content02.jpg';
+import Image03 from './images/amazon-content03.jpg';
 
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
@@ -42,6 +43,10 @@ const Content = ({ theme }) => {
       <Text as="p" {...paragraphProps}>
       여러분의 청원은 HYUNDAI가 자사의 중장비가 불법 금 채굴에 동원되고 있다는 것을 다시 한 번 확인시키고, 불법 금 채굴 해결에 협조할 것을 요구하는 데 큰 힘이 됩니다.
       </Text>
+
+      <Box {...paragraphProps}>
+        <Image src={Image03} layout="fill" alt="Greenpeace" />
+      </Box>
 
       <Heading {...headingProps} color={`theme.${themeInterests}`}>
         아마존 열대우림을 왜 지켜야 하나요?
