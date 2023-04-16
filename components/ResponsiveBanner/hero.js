@@ -5,6 +5,7 @@ import PageContainer from '@containers/pageContainer';
 export default function Index({
   content,
   imageSrcset,
+  videoSrcset,
   removeMask,
   children,
   defaultImage,
@@ -52,13 +53,13 @@ export default function Index({
         </Box>
 
         <Box pos={'absolute'} top={0} right={0} left={0} bottom={0}>
-          <picture>
+          {imageSrcset && 
+           <picture>
             {imageSrcset?.map((item, index) => {
               return (
                 <source media={item.media} srcSet={item.srcset} key={index} />
               );
             })}
-
             <Image
               src={defaultImage}
               height="100%"
@@ -67,6 +68,10 @@ export default function Index({
               objectPosition={objectPosition}
             />
           </picture>
+          }
+          {videoSrcset &&
+          <video src={videoSrcset} type="video/mp4" poster="" loop={true} autoPlay={true} muted={true} />
+          }
         </Box>
 
         {!removeMask && (

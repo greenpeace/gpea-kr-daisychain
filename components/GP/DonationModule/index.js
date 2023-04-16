@@ -63,9 +63,8 @@ const DonationModule = (props) => {
   const status = useScript(moduleUrl);
 
   return (
-    <Box pos="relative" minH="400px">
-      {/* Script loading */}
-      <Fade in={status != 'ready'}>
+    <>
+    <Fade in={status != 'ready'}>
         <Flex
           zIndex="99"
           pos="absolute"
@@ -94,7 +93,7 @@ const DonationModule = (props) => {
           ...signup,
         })} //petition daisy chain
       ></div>
-    </Box>
+      </>
   );
 };
 
