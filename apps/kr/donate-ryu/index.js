@@ -64,7 +64,7 @@ function Index() {
                             <span className="main__join-number">현재까지 4587명이 함께 해주셨습니다!</span> 
                             <div className="main__title">
                                 저와 함께,<br /><span>우리의 지구를 위해</span><br /> 행동해주세요
-                                <a href="">후원하기</a>
+                                <a href="#form-section" className="to-form">후원하기</a>
                             </div> 
                         </div>
                     </div>
@@ -73,12 +73,11 @@ function Index() {
                     </span>
                 </div>
             </section>
-            <section className="main__form-area">
+            <section className="main__form-area" id="form-section">
                 <div className="main__form-center"> 
                     <div className="main__form-text">
                         여러분의 후원으로 그린피스는<br/> <b>환경 파괴의 실태를 폭로</b>하고,<br/> 과학연구를 통해 환경 보호를 위한 <br/><b>해결책을 제시</b>할 수 있습니다.
                     </div>
-                    
                     <DonationModule
                       market={'kr'}
                       language={'ko_KR'}
@@ -86,14 +85,13 @@ function Index() {
                       campaignId={theme?.data?.CampaignId}
                       env={process.env.envParam}
                     />
-                    
                 </div>
             </section>
             <section className="main__donation-asking-half">
                 <div className="content-area">
                     <h1 className="white">배우 류준열님과 함께 지구를 위한 변화를 만들어주세요!</h1>
                     <p className="white align-left">기후변화는 북극곰의 문제가 아닌 우리의 문제입니다.<br/> 우리가 여행을 떠나 행복한 추억을 만든 섬은 잠길 것이고 <br/>산불은 계절이 바뀌어도 꺼지지 않을 것입니다. <br/>하지만 지금, 우리가 할 수 있는 일이 있습니다.</p>
-                    <a href="">함께하기</a>
+                    <a href="#form-section" className="to-form">함께하기</a>
                 </div>
             </section>
             <section className="main__donation-usage align-center">
@@ -136,7 +134,7 @@ function Index() {
                 <div className="content-area align-left">
                     <h1 className="white">배우 류준열님과 함께 지구를 위한 변화를 만들어주세요!</h1>
                     <p className="white align-left">기후변화는 북극곰의 문제가 아닌 우리의 문제입니다.<br/> 우리가 여행을 떠나 행복한 추억을 만든 섬은 잠길 것이고 <br/>산불은 계절이 바뀌어도 꺼지지 않을 것입니다. <br/>하지만 지금, 우리가 할 수 있는 일이 있습니다.</p>
-                    <a href="">함께하기</a>
+                    <a href="#form-section" className="to-form">함께하기</a>
                 </div>
             </section>
             <section className="main__activity">
@@ -144,7 +142,15 @@ function Index() {
                 <p className="align-left">그린피스는 전 세계에서 기후 위기를 막기 위해 활발하게 활동하고 있습니다.</p>
                 <div className="main__activity-container">
                     <div className="main__activity-item">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/activity01.png" width="100%" height="100%" alt="정치권을 향한 기후 정책 변화 요구" />
+                        {/* <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/activity01.png" width="100%" height="100%" alt="정치권을 향한 기후 정책 변화 요구" /> */}
+                        <div style={{ position: 'relative', width: '100px', height: '100px' }}>
+                        <Image
+                            src="https://gpseoulwebserver.co.kr/asset/images/rue/activity01.png"
+                            alt="정치권을 향한 기후 정책 변화 요구"
+                            layout="fill"
+                            objectFit="cover"
+                        />
+                        </div>
                         <div className="main__activity-item-content">
                             <div className="main__activity-item-number">
                                 <span>01</span>

@@ -6,7 +6,7 @@ import Nav from '@components/Header';
 function Layout({ children, showHeader }) {
   return (
     <Box>
-      {showHeader && <Nav />}
+      {/* {showHeader && <Nav />} */}
       {children}
     </Box>
   );
