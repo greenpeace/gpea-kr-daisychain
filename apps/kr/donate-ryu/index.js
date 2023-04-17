@@ -4,12 +4,6 @@ import {BrowserView, MobileView, isBrowser, isMobile} from "react-device-detect"
 // Import library
 import { useInView } from 'react-intersection-observer';
 import { Box, Flex } from '@chakra-ui/react';
-// Import custom containers
-import PageContainer from '@containers/pageContainer';
-import OverflowWrapper from '@containers/overflowWrapper';
-import ContentContainer from '@containers/contentContainer';
-import FormContainer from '@containers/formContainer';
-import PetitionFooter from '@containers/petitionFooter';
 // Import custom components
 import HeroBanner from '@components/ResponsiveBanner/hero';
 import DonationModule from '@components/GP/DonationModule';
@@ -21,7 +15,24 @@ import Image from 'next/image'
 import Content from './Content';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/GP0STSX96_PressMedia_ed.jpg';
+import usage01 from "./images/usage01.png";
+import usage02 from "./images/usage02.png";
+import usage03 from "./images/usage03.png";
+import usage04 from "./images/usage04.png";
+import usage05 from "./images/usage05.png";
+import usage06 from "./images/usage06.png";
+
+import activity01 from "./images/activity01.png";
+import activity02 from "./images/activity02.png";
+import activity03 from "./images/activity03.png";
+import activity04 from "./images/activity04.png";
+
+import christina from "./images/christina.png";
+import ryu_big from "./images/ryu_big.png";
+import byungwook_yoo from "./images/byungwook_yoo.png";
+import yoo_daeeol from "./images/yoo_daeeol.png";
+import kt from "./images/kt.png";
+import jude from "./images/jude.png";
 
 function Index() {
   const dispatch = useDispatch(); 
@@ -99,32 +110,32 @@ function Index() {
                 <p>그린피스는 캠페인의 정치적, 재정적 독립성을 유지하기 위해 정부와 기업의 후원을 일절 받지 않으며<br/> 개인 후원자님들의 후원으로만 활동하고 있습니다.</p>
                 <div className="main__donation-usage-container">
                     <div className="main__donation-usage-item odd">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/usage01.png" width="100%" height="100%" alt="기후위기" /> 
+                        <Image src={usage01} width="100%" height="100%" alt="기후위기" /> 
                         <span className="usage-number">38.2<span className="percent">%</span></span>   
                         <span className="usage-text">기후위기 대응</span>
                     </div>
                     <div className="main__donation-usage-item even">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/usage02.png" width="100%" height="100%" alt="생물다양성" />
+                        <Image src={usage02} width="100%" height="100%" alt="생물다양성" />
                         <span className="usage-number">6.8<span className="percent">%</span></span>
                         <span className="usage-text">생물 다양성(해양, 삼림 보호)</span>
                     </div>
                     <div className="main__donation-usage-item odd">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/usage03.png" width="100%" height="100%" alt="독성물질 제거" />
+                        <Image src={usage03} width="100%" height="100%" alt="독성물질 제거" />
                         <span className="usage-number">6.4<span className="percent">%</span></span>
                         <span className="usage-text">독성물질 제거(플라스틱)</span>
                     </div>
                     <div className="main__donation-usage-item even">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/usage04.png" width="100%" height="100%" alt="글로벌 캠페인" />
+                        <Image src={usage04} width="100%" height="100%" alt="글로벌 캠페인" />
                         <span className="usage-number">24<span className="percent">%</span></span>
                         <span className="usage-text">글로벌 캠페인</span>
                     </div>
                     <div className="main__donation-usage-item odd">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/usage05.png" width="100%" height="100%" alt="미디어 활동 및 비폭력 직접행동" />
+                        <Image src={usage05} width="100%" height="100%" alt="미디어 활동 및 비폭력 직접행동" />
                         <span className="usage-number">18.9<span className="percent">%</span></span>
                         <span className="usage-text">미디어 활동 및 비폭력 직접행동</span>
                     </div>
                     <div className="main__donation-usage-item even">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/usage06.png" width="100%" height="100%" alt="과학 조사 연구와 친환경 정책" />
+                        <Image src={usage06} width="100%" height="100%" alt="과학 조사 연구와 친환경 정책" />
                         <span className="usage-number">5.7<span className="percent">%</span></span>
                         <span className="usage-text">과학 조사 연구와 친환경 정책</span>
                     </div>
@@ -142,15 +153,7 @@ function Index() {
                 <p className="align-left">그린피스는 전 세계에서 기후 위기를 막기 위해 활발하게 활동하고 있습니다.</p>
                 <div className="main__activity-container">
                     <div className="main__activity-item">
-                        {/* <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/activity01.png" width="100%" height="100%" alt="정치권을 향한 기후 정책 변화 요구" /> */}
-                        <div style={{ position: 'relative', width: '100px', height: '100px' }}>
-                        <Image
-                            src="https://gpseoulwebserver.co.kr/asset/images/rue/activity01.png"
-                            alt="정치권을 향한 기후 정책 변화 요구"
-                            layout="fill"
-                            objectFit="cover"
-                        />
-                        </div>
+                        <Image src={activity01} width="100%" height="100%" alt="정치권을 향한 기후 정책 변화 요구" />
                         <div className="main__activity-item-content">
                             <div className="main__activity-item-number">
                                 <span>01</span>
@@ -159,7 +162,7 @@ function Index() {
                         </div>
                     </div>
                     <div className="main__activity-item">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/activity02.png" width="100%" height="100%" alt="기업에 책임을 묻고 변화를 요구하는 캠페인" />
+                        <Image src={activity02} width="100%" height="100%" alt="기업에 책임을 묻고 변화를 요구하는 캠페인" />
                         <div className="main__activity-item-content">
                             <div className="main__activity-item-number">
                                 <span>02</span>
@@ -168,7 +171,7 @@ function Index() {
                         </div>
                     </div>
                     <div className="main__activity-item">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/activity03.png" width="100%" height="100%" alt="기후 재난 현장 긴급 활동" />
+                        <Image src={activity03} width="100%" height="100%" alt="기후 재난 현장 긴급 활동" />
                         <div className="main__activity-item-content">
                             <div className="main__activity-item-number">
                                 <span>03</span>
@@ -177,7 +180,7 @@ function Index() {
                         </div>
                     </div>
                     <div className="main__activity-item">
-                        <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/activity04.png" width="100%" height="100%" alt="과학조사와 미디어 활동을 통한 대중 캠페인" />
+                        <Image src={activity04} width="100%" height="100%" alt="과학조사와 미디어 활동을 통한 대중 캠페인" />
                             <div className="main__activity-item-content">
                                 <div className="main__activity-item-number">
                                     <span>04</span>
@@ -197,7 +200,7 @@ function Index() {
                         </button>
                         <div className="slide-container">
                             <div className="slide" id="slide-1">
-                                <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/christina.png" width="100%" height="100%" className="ppl" alt="" />
+                                <Image src={christina} width="100%" height="100%" className="ppl" alt="" />
                                 <div className="slide-title">
                                     <h3>크리스티나 산 비센테</h3>
                                     <span>그린피스 동아시아지부 부사무총장</span>
@@ -205,7 +208,7 @@ function Index() {
                                 <p>그린피스의 변하지 않는 정신은 바로 사람을 중심으로 한다는 것입니다. 우리의 모든 활동은 사람을 중심으로 움직이며, 여러분이 함께 해주신 모든 참여들은 환경 문제 해결에 매우 중요합니다. 우리 앞에는 다양한 도전이 놓여있습니다. 바로 여러분의 힘으로 우리는 불가능을 가능하게 할 수 있습니다.</p>
                             </div>
                             <div className="slide" id="slide-2">
-                                <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/ryu_big.png" width="100%" height="100%" lassName="ppl" alt="" />
+                                <Image src={ryu_big} width="100%" height="100%" lassName="ppl" alt="" />
                                 <div className="slide-title">
                                     <h3>류준열</h3>
                                     <span>환경운동가, 영화배우</span>
@@ -213,7 +216,7 @@ function Index() {
                                 <p>거창하게 뭘 해야한다 보다는 생활 속에서 내가 실천할 수 있는 것들 부터 해보자. 그런 마인드였어요. ‘용기내’ 처럼요. 그런데 조금씩 알아갈 수록 기후변화는 결이 다른 문제더라고요. 좀 더 큰 틀의 변화가 필요한 문제라고 생각해요.</p>
                             </div>
                             <div className="slide" id="slide-3">
-                                <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/byungwook_yoo.png" width="100%" height="100%" className="ppl" alt="" />
+                                <Image src={byungwook_yoo} width="100%" height="100%" className="ppl" alt="" />
                                 <div className="slide-title">
                                     <h3>유병욱</h3>
                                     <span>크리에이티브 디렉터, TBWA KOREA</span>
@@ -221,7 +224,7 @@ function Index() {
                                 <p>사실 기후변화가 얼마나 치명적인지를 알리는 광고는 지금까지 많았죠. 저만해도 북극곰으로 대표되는 클리셰들이 떠오릅니다. 그래서 이번 그린피스 광고에서는 이 부분을 메시지 적으로 살짝 비틀고 싶었어요. ‘나는 북극곰인데, 나는 기후변화가 신경 쓰이지 않는다. 오히려 걱정해야 할 사람은 당신이다.’ 라고 말이죠.</p>
                             </div>
                             <div className="slide" id="slide-4">
-                                <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/yoo_daeeol.png" width="100%" height="100%" className="ppl" alt="" />
+                                <Image src={yoo_daeeol} width="100%" height="100%" className="ppl" alt="" />
                                 <div className="slide-title">
                                     <h3>유대얼</h3>
                                     <span>TV CF 감독</span>
@@ -229,7 +232,7 @@ function Index() {
                                 <p>오염된 음식을 먹는 현대인들에 대한 주제도 흥미로울 것 같아요. 토양과 물이 각종 화학물질과 미세플라스틱 등으로 오염되어 있잖아요? 그로 인해 우리가 먹는 음식물에서 나오는 유해 물질들이 우리 몸에 어떤 영향을 주는지 경고하는 메시지를 전한다면, 좀 더 개인에게 피부에 와 닿는 직접적인 경고가 되지 않을까요?</p>
                             </div>
                             <div className="slide" id="slide-5">
-                                <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/kt.png" width="100%" height="100%" className="ppl" alt="" />
+                                <Image src={kt} width="100%" height="100%" className="ppl" alt="" />
                                 <div className="slide-title">
                                     <h3>쯔이팽청</h3>
                                     <span>그린피스 동아시아지부 사무총장</span>
@@ -237,7 +240,7 @@ function Index() {
                                 <p>지금 동아시아에서 일어나는 일들은 지구 전체의 미래 환경에 엄청난 영향을 미칠 것입니다. 그만큼 불안감도 크지만, 그린피스 동아시아지부 사람들은 운이 좋은 사람들이기도 합니다. 이처럼 중요한 시기에 의미 있는 변화를 시민들과 함께 만들어 나갈 수 있기 때문입니다.</p>
                             </div>
                             <div className="slide" id="slide-6">
-                                <Image src="https://gpseoulwebserver.co.kr/asset/images/rue/jude.png" width="100%" height="100%" className="ppl" alt="" />
+                                <Image src={jude} width="100%" height="100%" className="ppl" alt="" />
                                 <div className="slide-title">
                                     <h3>이현숙/주드</h3>
                                     <span>그린피스 동아시아지부 부사무총장</span>
