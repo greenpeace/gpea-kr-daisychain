@@ -5,13 +5,9 @@ import {BrowserView, MobileView, isBrowser, isMobile} from "react-device-detect"
 import { useInView } from 'react-intersection-observer';
 import { Box, Flex, Image } from '@chakra-ui/react';
 // Import custom components
-import HeroBanner from '@components/ResponsiveBanner/hero';
 import DonationModule from '@components/GP/DonationModule';
-import ScrollToTargetButton from '@components/ScrollToTargetButton/ScrollToTargetButton';
 
 // Import Contents
-//import Donation from './Donation';
-import Content from './Content';
 import SEO from './SEO';
 // Import static
 import usage01 from "./images/usage01.png";
@@ -44,24 +40,8 @@ import "swiper/css/pagination";
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
-// export async function getServerSideProps() {
-//     const numberOfResponses = parseInt('%%=v(@NumberOfResponses)=%%', 10);
-  
-//     return {
-//       props: {
-//         numberOfResponses,
-//       },
-//     };
-//   }
-  
 function Index() {
-  const dispatch = useDispatch(); 
   const theme = useSelector((state) => state?.theme);
-  const [ref, inView] = useInView({
-    threshold: 0,
-  });
-  const mobileForm = useRef(null); 
-  const thankForm = useRef(null); 
   const [gclid, setGclid] = React.useState(null);
   const changeGclid = React.useCallback(
     (gclid) => {

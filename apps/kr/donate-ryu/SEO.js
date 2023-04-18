@@ -35,6 +35,7 @@ const SEO = () => {
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-jquery-1.12.4.min"></Script>
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-slick.min"></Script>
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-volunteer_201103"></Script>
+      <Script src="https://www.googleoptimize.com/optimize.js?id=GTM-K8RRN9R" async=""></Script>
       <Script type="text/javascript" src="./carousel.js"></Script>
       <title>그린피스 후원하기 | 나는 북극곰입니다</title>
     </Head>
