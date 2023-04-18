@@ -11,6 +11,12 @@
     outline: none !important;
 }
 
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
 html {
     font-size: 16px;
 }
@@ -308,7 +314,6 @@ video{
 
     .main__form-donate{
         width: 100%;
-        margin-top: 5rem;
     }
 }
 
@@ -833,7 +838,7 @@ p{
     }
 
     .main__activity-item img{
-        max-height: 60% !important;
+        height: 60% !important;
     }
 
     .main__activity-item-content{
@@ -856,8 +861,10 @@ p{
 .main__activity-item img{
     border-radius: 1rem 1rem 0 0;
     max-width: 100%;
-    max-height: 74%;
-    width: auto;
+    max-height: 64%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .main__activity-item-content{
     display: flex;
@@ -902,7 +909,7 @@ p{
 
 @media only screen and (max-width:1023px) {
     .main__carousel{
-        padding: 7rem 0 3rem;
+        padding: 7rem 1rem 3rem 1rem;
     }
 }
 
@@ -914,7 +921,7 @@ p{
 .carousel-body{
     display: flex;
     align-items: center;
-    padding: 5rem 20%;
+    padding: 5rem 15%;
 }
 
 @media only screen and (max-width:1023px) {
@@ -939,10 +946,11 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem 1rem!important;
     overflow: hidden;
     width: 100%;
     position: relative;
+    padding: 1.5rem 1rem!important;
   }
   
 /* .slide {
@@ -1189,6 +1197,14 @@ p{
     .swiper-pointer-events{
         padding: 0 0 3rem 0 !important;
     }
+
+    .slide p{
+        padding: 0 1rem !important;
+    }
+
+    .slide{
+        padding: 0 !important;
+    }
 }
 
 .swiper-horizontal.swiper-css-mode>.swiper-wrapper {
@@ -1250,6 +1266,10 @@ footer{
 
     .footer__link a{
         line-height: 2rem;
+    }
+
+    .footer__link-url a{
+        white-space: nowrap;
     }
 }
 
@@ -1341,7 +1361,23 @@ footer{
     display: none;
 }
 
+.step__head a{
+    font-size: 1.5rem !important;
+}
 
+.gpea-donation-module__foot .foot-text{
+    font-size: 14px !important;
+}
+
+@media only screen and (max-width:1023px) {  
+    .gpea-donation-module__foot .foot-text{
+        font-size: 12px !important;
+    }
+}
+
+.gpea-donation-module .form-row + .form-row {
+    margin-top: 0 !important;
+}
 
 
 
