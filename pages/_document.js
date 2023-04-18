@@ -23,6 +23,11 @@ class NextDocument extends Document {
           />
         </Head>
         <body>
+        <script
+            dangerouslySetInnerHTML={{
+              __html: `window.numberOfResponses = parseInt('%%=v(@NumberOfResponses)=%%', 10);`,
+            }}
+          />
           <Main />
           <NextScript />
           {/** MC_FORM_STARTS  */}

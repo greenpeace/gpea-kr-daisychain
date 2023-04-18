@@ -34,6 +34,9 @@ const SEO = () => {
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-slick.min"></Script>
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-volunteer_201103"></Script>
       <Script type="text/javascript" src="./carousel.js"></Script>
+      <Script type="text/javascript">
+        window.numberOfResponses = parseInt('%%=v(@NumberOfResponses)=%%', 10);
+      </Script>
       <link rel="icon" type="image/x-icon" href="https://www.greenpeace.org/static/planet4-hongkong-stateless/2021/09/01aca3df-favicon-96x96-1.png" />
       <title>Document</title>
     </Head>

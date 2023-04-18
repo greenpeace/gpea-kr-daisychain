@@ -13,9 +13,16 @@
 
 html {
     font-size: 16px;
-  }
+}
 
-body {
+@media only screen and (max-width:1023px) {
+    html {
+        font-size: 12px !important;
+      }
+}
+
+
+html > body {
     overflow-x: hidden;
     background: #fff;
     font-family: 'Noto Sans KR', sans-serif;
@@ -34,6 +41,13 @@ button{
 
 span{
     display: inline-block;
+}
+
+h1{
+    font-size: 2rem !important;
+    letter-spacing: -1px;
+    line-height: 2.65rem;
+    font-weight: bold !important;
 }
 
 h3{
@@ -55,7 +69,7 @@ h3{
 
 .main__hero{
     width: 100%;
-    height: 60rem;
+    height: 100vh;
     padding: 0 4.375rem;
     position: relative;
     overflow: hidden;
@@ -83,7 +97,6 @@ video{
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #AFAFAF;
   }
-  
   /* Microsoft Edge */
   ::placeholder {
     color: #AFAFAF;
@@ -103,13 +116,53 @@ video{
     height: calc(100vh - 7rem);
 }
 
+@media only screen and (max-width:1023px) {
+    .main__hero {
+        height: 39rem;
+        padding: 0 !important;
+    }
+
+    .main__content{
+        top: 2rem;
+        left: 1rem;
+        height: auto !important;
+    }
+
+    .main__logo{
+        background-size: 10.5rem !important;
+    }
+
+    .main__text{
+        margin: 10rem 0 0 0 !important;
+    }
+
+    .main__join-number {
+        font-size: 1rem !important;
+    }
+
+    .main__title {
+        font-size: 2.5rem !important;
+        line-height: 2.9rem !important;
+    }
+
+    video {
+        height: 39rem !important;
+    }
+
+    .main__container-outer {
+        height: 39rem !important;
+        margin: 0 !important;
+    }
+}
+
 .main__container-outer{
     position: relative;
     width: 100vw;
     margin-left: -4.375rem;
-    height: 60rem;
+    height: 100vh;
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 .main__logo{
@@ -131,8 +184,15 @@ video{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
-    top: calc(100vh - 5rem);
+    bottom: -2rem;
     text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1023px) {
+    .main__hero-scroll{
+        display: none;
+    }
 }
 
 .main__hero-scroll span{
@@ -175,6 +235,7 @@ video{
     font-size: 3.5rem;
     margin-top: 2rem;
     color: #fff;
+    line-height: 4rem;
     
 }
 
@@ -225,6 +286,30 @@ video{
 }
 
 .main__form-donate{
+    width: 55%;
+}
+
+@media only screen and (max-width:1023px) {
+    .main__form-area{
+        padding: 8rem 1rem !important;
+    }
+
+    .main__form-center{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+
+    .main__form-text{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 5rem 0;
+    }
+
+    .main__form-donate{
+        width: 100%;
+        margin-top: 5rem;
+    }
 }
 
 .main_form-donate-top{
@@ -356,6 +441,8 @@ video{
     border-radius: 0px 0px 1rem 1rem;
 }
 
+
+
 .main__form-donate-main p{
     font-size: 1.2rem;
     font-weight: 500;
@@ -430,7 +517,7 @@ video{
 
 .btn-green.alone, .btn-grey.alone{
     width: 80%;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 1.5rem;
 }
 
@@ -488,7 +575,7 @@ video{
 }
 
 p{
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 !important;
     font-size: 1.2rem;
     text-align: center;
     line-height: 1.8rem;
@@ -496,6 +583,11 @@ p{
     letter-spacing: -0.7px;
 }
 
+@media only screen and (max-width:1023px) {
+    p{
+        margin: 1rem 0;
+    }
+}
 
 .icon-earth{
     margin-top: 2rem;
@@ -527,23 +619,62 @@ p{
     display: flex;
     width: 100%;
     height: 26rem;
-    padding-top: 3rem;
     padding-left: 8.75rem;
     background-color: #25577C;
-    background-image: url(https://gpseoulwebserver.co.kr/asset/images/rue/bannerimage.png);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 55% auto;
 }
 
-h1{
-    font-size: 2rem;
-    letter-spacing: -1px;
-    line-height: 2.65rem;
+@media only screen and (max-width:1023px) {
+    .main__donation-asking-half .to-form{
+        display: none !important;
+    }
+
+    .main__donation-asking-half{
+        flex-direction: column-reverse;
+        padding-left: 0;
+        height: auto;
+    }
+
+    .main__donation-asking-half .content-area{
+        padding: 2rem;
+    }
+
+    .content-area{
+        width: 100% !important;
+        padding-top: 3rem;
+        text-align: center;
+    }
+    
+    .content-area p{
+        text-align: center;
+    }
+
+    .main__donation-asking-half .image-area{
+        width: 100% !important;
+        background-image: url(https://gpseoulwebserver.co.kr/asset/images/rue/ryu-big-mobile.jpg) !important;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 20rem;
+    }
+
+    .content-area a{
+        display: inline-block !important;
+    }
+
 }
 
 .content-area{
     width: 35%;
+    padding-top: 3rem;
+}
+
+.main__donation-asking-half .image-area{
+    width: 65%;
+    background-image: url(https://gpseoulwebserver.co.kr/asset/images/rue/bannerimage.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .white{
@@ -568,6 +699,30 @@ h1{
     padding-top: 4rem;
 }
 
+@media only screen and (max-width:1023px) {
+    .main__donation-usage p{
+        padding: 0 2rem;
+    }
+
+    .main__donation-usage-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 0px;
+        margin-top: 3rem;
+    }
+
+    .main__donation-usage-item img{
+        height: auto !important;
+    }
+
+    .usage-text{
+        font-size: 1.1rem !important;
+        line-height: 1.4rem;
+        padding: 0 0.8rem;
+    }
+    
+}
+
 .main__donation-usage-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -586,6 +741,7 @@ h1{
 .main__donation-usage-item img{
     width: 50%;
     height: 8rem;
+    margin: 0 25%;
 }
 
 .main__donation-usage-item{
@@ -619,11 +775,70 @@ h1{
     padding: 14rem 6rem;
 }
 
+@media only screen and (max-width:1023px) {
+    .main__donation-asking-full{
+        flex-direction: column;
+        background: none;
+        padding: 0;
+    }
+
+    .main__donation-asking-full .image-area{
+        background: url('https://gpseoulwebserver.co.kr/asset/images/rue/ryu02-mobile.jpg') left top / cover no-repeat;
+        height: 20rem;
+    }
+
+    .main__donation-asking-full .content-area{
+        background-color: #A5AE38;
+        padding-bottom: 2rem;
+    }
+
+
+    .main__donation-asking-full .content-area a{
+        display: none !important;
+    }
+}
+
 .main__activity{
     background: url('https://gpseoulwebserver.co.kr/asset/images/rue/background-grey.jpg') center top / cover no-repeat;
     background-size: 100% auto;
     padding: 8.75rem 8.75rem 0 8.75rem;
     background-color: #fff;
+}
+
+@media only screen and (max-width:1023px) {
+    .main__activity {
+        background-size: 100% 21rem;
+        padding: 3rem 1rem 0 1rem;
+    }
+
+    .main__activity-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+
+    .main__activity p{
+        padding: 0 3rem;
+        text-align: center !important;
+    }
+
+    .main__activity h1{
+        text-align: center;
+    }
+
+    .main__activity-item-text{
+        font-size: 1.2rem !important;
+        line-height: 1.5rem;
+    }
+
+    .main__activity-item img{
+        max-height: 60% !important;
+    }
+
+    .main__activity-item-content{
+        padding-right: 1rem !important;
+    }
 }
 
 .main__activity-container{
@@ -641,7 +856,7 @@ h1{
 .main__activity-item img{
     border-radius: 1rem 1rem 0 0;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 74%;
     width: auto;
 }
 .main__activity-item-content{
@@ -685,6 +900,12 @@ h1{
     padding: 8.75rem 8.75rem 0 8.75rem;
 }
 
+@media only screen and (max-width:1023px) {
+    .main__carousel{
+        padding: 7rem 0 3rem;
+    }
+}
+
 /* carousel */
 .carousel{
     width: 100%;    
@@ -693,6 +914,13 @@ h1{
 .carousel-body{
     display: flex;
     align-items: center;
+    padding: 5rem 10rem;
+}
+
+@media only screen and (max-width:1023px) {
+    .carousel-body{
+        padding: 2rem 0 !important; 
+    }
 }
 
 .carousel-controls button {
@@ -717,12 +945,12 @@ h1{
     position: relative;
   }
   
-.slide {
-    flex: 0 0 27.5%;
+/* .slide {
+    flex: 0 0 44%;
     flex-direction: column;
     position: relative;
     width: 27.5%;
-    height: 15rem;
+    height: 26rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -747,7 +975,7 @@ h1{
     background-color: #fff;
     background-size: 2rem;
     background-position: center 40%;
-}
+} 
 
 .slide p{
     position: absolute;
@@ -757,23 +985,77 @@ h1{
     font-size: 0.6rem;
     line-height: 1rem;
     color: #918F8F;
+} 
+
+.slide h3{
+    font-size: 1.2rem;
+    color: #918F8F;
+    margin-top: -1.5rem;
+    margin-bottom: 0;
 }
 
-.slide.selected p{
+.slide span{
+    font-size: 0.6rem;
+    color: #909090;
+    margin-top: -0.5rem;
+    font-weight: 300;
+}
+*/
+
+
+.slide {
+    flex: 0 0 100%;
+    flex-direction: column;
+    position: relative;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s, opacity 0.5s;
+    margin-right: -31.5%;
+    background-color: #fff;
+    box-shadow: 0px 5px 16px #00000033;
+    padding: 3rem 2rem;
+    background-image: url(https://gpseoulwebserver.co.kr/asset/images/rue/quote.png);
+    background-position: center 52%;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    opacity: 1;
+    width: 100%;
+    height: 26rem;
+    background-color: #fff;
+    background-size: 2rem;
+    background-position: center 52%;
+}
+
+.slide.selected {
+    flex: 0 0 44%;
+    opacity: 1;
+    transform: translateY(-50px) scale(1.5);
+    width: 44%;
+    margin-right: -31.5%;
+    height: 26rem;
+    background-color: #fff;
+    background-size: 2rem;
+    background-position: center 40%;
+} 
+
+.slide p{
     position: absolute;
     top: 36%;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0;
-    padding: 0 2rem;
+    padding: 0 2.5rem;
     color: #4E4E4E;
+    margin-top: 4rem !important;
 }
 
 .slide .ppl{
-    width: 4rem;
-    height: 4rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     position: absolute;
     top: -1.75rem;
@@ -796,7 +1078,7 @@ h1{
 }
 
 .slide h3{
-    font-size: 0.8rem;
+    font-size: 1.4rem;
     color: #918F8F;
     margin-top: -1.5rem;
     margin-bottom: 0;
@@ -810,8 +1092,8 @@ h1{
 }
 
 .slide span{
-    font-size: 0.6rem;
-    color: #909090;
+    font-size: 1rem;
+    color: #000;
     margin-top: -0.5rem;
     font-weight: 300;
 }
@@ -888,6 +1170,47 @@ h1{
     top: 14px;
 }
 
+/* /////////////// swiper //////////////// */
+
+.swiper-slide{
+    width: 100% !important;
+    padding: 2rem;
+}
+
+@media only screen and (max-width:1023px) {
+    .swiper-button-prev:after, .swiper-button-next:after{
+        font-size: 1.3rem !important;
+    }
+
+    .swiper-horizontal.swiper-css-mode>.swiper-wrapper {
+        width: 89% !important;
+    }
+
+    .swiper-pointer-events{
+        padding: 0 0 3rem 0 !important;
+    }
+}
+
+.swiper-horizontal.swiper-css-mode>.swiper-wrapper {
+    width: 62%;
+}
+
+.swiper-button-prev{
+    color: #66cc00 !important;
+}
+
+.swiper-button-next{
+    color: #848484 !important;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    font-weight: bold;
+}
+
+.swiper-pointer-events{
+    padding: 0 0 5rem 0 !important;
+}
+
 footer{
     background: url('https://gpseoulwebserver.co.kr/asset/images/rue/footer.jpg') no-repeat;
     background-size: cover;
@@ -895,12 +1218,46 @@ footer{
     padding: 8.75rem;
 }
 
+@media only screen and (max-width:1023px) {
+    footer{
+        padding: 3rem 1rem !important;
+    }
+
+    .footer__text {
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    .footer__left{
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer__right, .footer__left{
+        width: 100% !important;
+        padding-right: 0 !important;
+    }
+    .footer__right p, .footer__left p{ 
+        text-align: center;
+        font-size: 1rem !important;
+    }
+
+    .footer__link{
+        padding: 0 3rem 8rem 3rem;
+    }
+
+    .footer__link a{
+        line-height: 2rem;
+    }
+}
+
 .footer__text{
     display: flex;
-
 }
 
 .footer__right, .footer__left{
+    display: flex;
+    flex-direction: column;
     width: 50%;
     padding-right: 5rem;
 }
@@ -947,20 +1304,36 @@ footer{
     margin-top: 2rem;
 }
 
-.scroll-change-style1{
-    height: calc(60rem - 7rem);
+.mobile__submit-area{
+    display: none;
 }
 
-.scroll-change-style2{
-    top: calc(60rem - 5rem);
+@media only screen and (max-width:1023px) {  
+    .btn__mobile-submit{
+        display: inline-block;
+        width: 100%;
+        height: 44px;
+        border-radius: 35px;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: -0.15px;
+        line-height: 3.4rem;
+        text-align: center;
+        background: #66cc00;
+        color: #ffffff;
+    }
+
+    .mobile__submit-area{
+        z-index: 200;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 69px;
+        padding: 13px 29px;
+        box-shadow: 0 -3px 9px 0 rgba(0, 0, 0, 0.19);
+        background: #fff;
+    }
 }
-
-
-
-
-  
-  
-  
 
 
 
