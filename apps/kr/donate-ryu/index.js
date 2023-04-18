@@ -189,7 +189,7 @@ function Index() {
                 </div>
                 <div className="content-area">
                     <h1 className="white">지구의 목소리가 되어주세요!</h1>
-                    <p className="white align-left">북극에서 아마존 우림까지, 그린피스는 인간의 손이 닿지 않는<br/> 곳을 항해하며 환경파괴 현장을 알리고 있습니다.<br/> 과학적 조사와 연구를 바탕으로 해결책을 제시하는<br/> 그린피스의 지속적인 활동에 여러분도 함께해주세요!</p>
+                    <p className="white align-left">북극에서 아마존 우림까지, 그린피스는 인간의 손이 닿지 않는 곳을 항해하며 환경파괴 현장을 알리고 있습니다.<br/> 과학적 조사와 연구를 바탕으로 해결책을 제시하는<br/> 그린피스의 지속적인 활동에 여러분도 함께해주세요!</p>
                     <a href="#form-section" className="to-form">함께하기</a>
                 </div>
             </section>

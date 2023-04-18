@@ -808,6 +808,7 @@ p{
     background-size: 100% auto;
     padding: 8.75rem 8.75rem 0 8.75rem;
     background-color: #fff;
+    width: 100%;
 }
 
 @media only screen and (max-width:1023px) {
@@ -1377,6 +1378,10 @@ footer{
 
 .gpea-donation-module .form-row + .form-row {
     margin-top: 0 !important;
+}
+
+.step--3 .gpea-donation-module .form-row + .form-row {
+    margin-top: 20px !important;
 }
 
 
