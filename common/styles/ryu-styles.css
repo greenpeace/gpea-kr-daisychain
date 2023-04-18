@@ -407,7 +407,7 @@ video{
     color: #fff !important;
 }
 
-.amount{
+/* .amount{
     font-size: 1.2rem !important;
     display: flex !important;
     width: 5rem !important;
@@ -415,9 +415,9 @@ video{
 }
 
 .amount span{
-    font-size: 0.6rem !important;
-    line-height: 1.8rem;
-}
+    font-size: 1.5rem!important;
+    line-height: 0.5rem;
+} */
 
 .icon-pencil{
     width: 3rem !important;
@@ -914,7 +914,7 @@ p{
 .carousel-body{
     display: flex;
     align-items: center;
-    padding: 5rem 10rem;
+    padding: 5rem 20%;
 }
 
 @media only screen and (max-width:1023px) {
@@ -1197,10 +1197,12 @@ p{
 
 .swiper-button-prev{
     color: #66cc00 !important;
+    left: 0rem !important;
 }
 
 .swiper-button-next{
     color: #848484 !important;
+    right: 0 !important;
 }
 
 .swiper-button-prev:after, .swiper-button-next:after{
@@ -1208,7 +1210,7 @@ p{
 }
 
 .swiper-pointer-events{
-    padding: 0 0 5rem 0 !important;
+    padding: 0 9rem 5rem 9rem;
 }
 
 footer{
@@ -1333,6 +1335,10 @@ footer{
         box-shadow: 0 -3px 9px 0 rgba(0, 0, 0, 0.19);
         background: #fff;
     }
+}
+
+.gpea-donation-module__foot svg{
+    display: none;
 }
 
 

@@ -123,7 +123,7 @@ function Index() {
       <div className="wrapper">
         <div className="main">
             <section className="main__hero">
-                <video poster="" loop autoPlay muted="muted">
+                <video poster="" loop autoPlay playsInline muted>
                     <source src="https://gpseoulwebserver.co.kr/asset/video/rue-hero-video.mp4" type="video/mp4" />
                 </video>                
                 <div className="main__container-outer">
@@ -138,9 +138,9 @@ function Index() {
                             </div> 
                         </div>
                     </div>
-                    <span className="main__hero-scroll">
+                    <a href="#form-section" className="main__hero-scroll to-form">
                         <span>scroll</span>
-                    </span>
+                    </a>
                 </div>
             </section>
             <section className="main__form-area" id="form-section">
@@ -265,6 +265,7 @@ function Index() {
                         navigation={true}
                         pagination={{
                           clickable: true,
+                          //dynamicBullets: true,
                         }}
                         spaceBetween={0}
                         centeredSlides={true}
