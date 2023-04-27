@@ -254,16 +254,6 @@ function Index() {
                         className="slide-container"
                         >
                         <SwiperSlide>
-                            <div className="slide" id="slide-1">
-                            <Image src={christina} width="100%" height="100%" className="ppl" alt="" />
-                            <div className="slide-title">
-                                <h3>크리스티나 산 비센테</h3>
-                                <span>그린피스 동아시아지부 부사무총장</span>
-                            </div>
-                            <p>그린피스의 변하지 않는 정신은 바로 사람을 중심으로 한다는 것입니다. 우리의 모든 활동은 사람을 중심으로 움직이며, 여러분이 함께 해주신 모든 참여들은 환경 문제 해결에 매우 중요합니다. 우리 앞에는 다양한 도전이 놓여있습니다. 바로 여러분의 힘으로 우리는 불가능을 가능하게 할 수 있습니다.</p>
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
                             <div className="slide" id="slide-2">
                             <Image src={ryu_big} width="100%" height="100%" className="ppl" alt="" />
                             <div className="slide-title">
@@ -271,6 +261,16 @@ function Index() {
                                 <span>환경운동가, 영화배우</span>
                             </div>
                             <p>거창하게 뭘 해야한다 보다는 생활 속에서 내가 실천할 수 있는 것들 부터 해보자. 그런 마인드였어요. ‘용기내’ 처럼요. 그런데 조금씩 알아갈 수록 기후변화는 결이 다른 문제더라고요. 좀 더 큰 틀의 변화가 필요한 문제라고 생각해요.</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className="slide" id="slide-1">
+                            <Image src={christina} width="100%" height="100%" className="ppl" alt="" />
+                            <div className="slide-title">
+                                <h3>크리스티나 산 비센테</h3>
+                                <span>그린피스 동아시아지부 부사무총장</span>
+                            </div>
+                            <p>그린피스의 변하지 않는 정신은 바로 사람을 중심으로 한다는 것입니다. 우리의 모든 활동은 사람을 중심으로 움직이며, 여러분이 함께 해주신 모든 참여들은 환경 문제 해결에 매우 중요합니다. 우리 앞에는 다양한 도전이 놓여있습니다. 바로 여러분의 힘으로 우리는 불가능을 가능하게 할 수 있습니다.</p>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
@@ -310,7 +310,7 @@ function Index() {
                                 <h3>이현숙/주드</h3>
                                 <span>그린피스 동아시아지부 부사무총장</span>
                             </div>
-                            <p>그린피스의 변하지 않는 정신은 바로 사람을 중심으로 한다는 것입니다. 우리의 모든 활동은 사람을 중심으로 움직이며, 여러분이 함께 해주신 모든 참여들은 환경 문제 해결에 매우 중요합니다. 우리 앞에는 다양한 도전이 놓여있습니다. 바로 여러분의 힘으로 우리는 불가능을 가능하게 할 수 있습니다.</p>
+                            <p>기후 위기를 극복하기 위해 전 세계가 노력하는 가운데, 앞으로 동아시아의 역할은 더욱 중요해질 것입니다. 특히 한국은 동아시아의 화석연료 패러다임을 바꾸는 데 결정적 역할을 할 수 있습니다. 그리고 이 변화의 주인공은 바로 시민들입니다. 여러분이 만들어가는 세상에 그린피스가 함께 하겠습니다.</p>
                             </div>
                         </SwiperSlide>
                         </Swiper>
@@ -322,7 +322,7 @@ function Index() {
             <div className="footer__text">
                 <div className="footer__left ">
                 <Image src="https://gpseoulwebserver.co.kr/asset/images/logo/Greenpeace_Logo_Black_SVG.svg" alt="Greenpeace"/>
-                    <p className="align-left">후원 완료와 동시에 첫 후원금이 결제됩니다. 정기 후원 결제일은 매월 10일이며, 결제가 되지 않을 시 결제가 되지 않은 경우 같은 달 15일, 20일, 27일 재결제 됩니다. <br/><br/> 자동이체의 경우 결제일이 공휴일, 주말에 겹치는 경우 그 다음 도래하는 은행 영업일에 결제됩니다. (*결제일 전날이 서울사무소 휴일인 경우 결제가 하루 지연될 수 있습니다.) 신용카드의 경우 휴일 여부와 상관 없이 결제일에 결제됩니다. 다만, 시스템 처리 과정에서 다음 영업일에 결제될 수 있습니다.</p>
+                    <p className="align-left">후원 완료와 동시에 첫 후원금이 결제됩니다. 정기 후원 결제일은 매월 10일이며, 결제가 되지 않은 경우 같은 달 15일, 20일, 27일 재결제 됩니다. <br/><br/> 자동이체의 경우 결제일이 공휴일, 주말에 겹치는 경우 그 다음 도래하는 은행 영업일에 결제됩니다. (*결제일 전날이 서울사무소 휴일인 경우 결제가 하루 지연될 수 있습니다.) 신용카드의 경우 휴일 여부와 상관 없이 결제일에 결제됩니다. 다만, 시스템 처리 과정에서 다음 영업일에 결제될 수 있습니다.</p>
                 </div>
                 <div className="footer__right">
                     <p className="align-left">14세 미만 후원자는 법정 대리인 동의 후 후원이 가능하며 14세~19세 미성년자일 경우 정기후원 3만원 이하, 일시후원 30만원 이하의 후원만 가능합니다. <br/><br/>연말정산 소득공제 혜택을 받으실 수 있습니다. 가입 후 연말정산을 위한 개인정보를 꼭 입력해 주세요. 그린피스는 독립성을 지키기 위하여 정부, 기업의 후원은 받지 않습니다. <br/><br/>기타 문의는 FAQ 참고 부탁드립니다. 또한 후원관리팀으로<br/> 이메일 sukr@greenpeace.org 또는 <br/>유선 문의 주세요. 02-3144-1997 (평일 오전 10시~오후 5시)</p>
