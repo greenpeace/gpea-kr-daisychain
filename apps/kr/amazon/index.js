@@ -102,9 +102,9 @@ function Index() {
       </Box>
       <PageContainer>
         <OverflowWrapper>
-        {(submitted && isMobile)?  
-          <>
-            <Box flex={1} mt={{ base: 10, sm: 60 }} style={{paddingTop: 50,}}>
+        {(submitted && (isMobile || isBrowser))?  
+          <div className={"lg:flex"}>
+            <Box flex={1} mt={{ base: 10, sm: 60 }} style={{paddingTop: 50}}>
               <ContentContainer> 
                 {(() => { 
                     return submitted ? <Thankyou /> : <Content />; 
@@ -130,7 +130,7 @@ function Index() {
                 </Box>
               </FormContainer>
             </Box>
-          </>
+          </div>
           :
           <Flex flexDirection={{ base: 'column-reverse', md: 'row' }}>
             <Box flex={1} mt={{ base: 10, sm: 60 }}>
@@ -149,9 +149,6 @@ function Index() {
                           market={'kr'}
                           language={'ko_KR'}
                           campaign={process.env.campaign}
-                          // campaign={
-                          //   theme?.params?.donation_module_campaign ?? 'nuke'
-                          // }
                           campaignId={theme?.data?.CampaignId}
                           env={process.env.envParam}
                         />
