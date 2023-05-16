@@ -18,19 +18,19 @@ const SEO = () => {
       /> */}
       {/* title */}
       <title>
-        아마존 열대우림을 파괴하는 중장비, HYUNDAI는 판매를 중단해주세요! | 그린피스
+        아마존 수은 중독으로 고통받는 원주민의 목소리에 힘을 보태주세요! | 그린피스
       </title>
       <meta
         property="og:title"
-        content="그린피스 | 아마존 열대우림을 파괴하는 중장비, HYUNDAI는 판매를 중단해주세요!"
+        content="그린피스 | 아마존 수은 중독으로 고통받는 원주민의 목소리에 힘을 보태주세요!"
       />
       <meta
         name="description"
-        content="아마존 열대우림을 파괴하는 중장비, HYUNDAI는 판매를 중단해주세요!"
+        content="아마존 수은 중독으로 고통받는 원주민의 목소리에 힘을 보태주세요!"
       />
       <meta
         property="og:description"
-        content="아마존 열대우림을 파괴하는 중장비, HYUNDAI는 판매를 중단해주세요!"
+        content="아마존 수은 중독으로 고통받는 원주민의 목소리에 힘을 보태주세요!"
       />
       <meta
         property="og:image"

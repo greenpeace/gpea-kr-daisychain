@@ -93,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '아마존 열대우림을 파괴하는 중장비, <br/>HYUNDAI는 판매를 중단해주세요!',
+                    '아마존 수은 중독으로 <br/>고통받는 원주민의 <br/>목소리에 힘을 보태주세요!',
                   description: [''],
                 }}
               />
