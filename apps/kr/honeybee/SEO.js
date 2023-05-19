@@ -36,7 +36,6 @@ const SEO = () => {
         property="og:image"
         content="https://gpseoulwebserver.co.kr/petitions/honeybee/honeybee-main.jpg"
       />
-      <Script src="https://www.googleoptimize.com/optimize.js?id=GTM-K8RRN9R" async=""></Script>
     </Head>
   );
 };

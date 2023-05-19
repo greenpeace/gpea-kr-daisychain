@@ -41,6 +41,13 @@ function Index({
     (state) => state?.hiddenForm?.data,
   );
 
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://www.googleoptimize.com/optimize.js?id=GTM-K8RRN9R';
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   /* Set dynamic theme parameters */
   useEffect(() => {
     if (router.isReady) {
