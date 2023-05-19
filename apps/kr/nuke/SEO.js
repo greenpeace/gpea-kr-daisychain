@@ -37,6 +37,7 @@ const SEO = () => {
         property="og:image"
         content="https://www.greenpeace.org/static/planet4-korea-stateless/2021/09/2b46af17-kr_2021_ce_petition_nuke_main.jpg"
       />
+      <Script src="https://www.googleoptimize.com/optimize.js?id=GTM-K8RRN9R" async=""></Script>
     </Head>
   );
 };
