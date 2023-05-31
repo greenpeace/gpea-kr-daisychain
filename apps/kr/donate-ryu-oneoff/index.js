@@ -146,6 +146,7 @@ function Index() {
                     <a href="#form-section" className="to-form">함께하기</a>
                 </div>
                 <div className="image-area">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7zijrDrxdZU?controls=1&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </section>
             <section className="main__donation-usage align-center">
