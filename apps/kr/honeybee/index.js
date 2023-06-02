@@ -93,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '한덕수 총리님, 꿀벌을 구해주세요! <br/>지금, 꿀벌이 위험합니다.',
+                    '사라지는 꿀벌과 야생벌, <br/>더 늦기 전에 구해주세요.',
                   description: [''],
                 }}
               />
