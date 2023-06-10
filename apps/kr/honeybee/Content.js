@@ -23,7 +23,7 @@ const Content = ({ theme }) => {
       </Heading>
 
       <Text as="p" {...paragraphProps}>
-        작년 초 꿀벌 78억 마리가 사라지고 올해 초 141억 마리가 사라졌습니다. 수 많은 전문가들이 내년 월동 폐사 규모가 더욱 커질 것으로 전망하고 있습니다. 개체수가 파악되지 않고 있는 야생벌까지 생각하면 상황은 더욱 심각합니다.
+        작년 초 꿀벌 78억 마리가 사라지고 올해 초 141억 마리가 사라졌습니다. 수많은 전문가들이 내년 월동 폐사 규모가 더욱 커질 것으로 전망하고 있습니다. 개체수가 파악되지 않고 있는 야생벌까지 생각하면 상황은 더욱 심각합니다.
       </Text>
       
       <Box {...paragraphProps}>
@@ -35,7 +35,7 @@ const Content = ({ theme }) => {
       </Text>
 
       <Heading {...headingProps} color={`theme.${themeInterests}`}>
-        벌은 ‘꽃’으로 구할 수 있습니다.
+        벌은 꽃으로 구할 수 있습니다.
       </Heading>
 
       <Text as="p" {...paragraphProps}>

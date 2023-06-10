@@ -18,19 +18,19 @@ const SEO = () => {
       /> */}
       {/* title */}
       <title>
-        한덕수 총리님, 꿀벌을 구해주세요! 지금, 꿀벌이 위험합니다. | 그린피스
+        그린피스 | 사라지는 꿀벌과 야생벌, 더 늦기 전에 구해주세요.
       </title>
       <meta
         property="og:title"
-        content="그린피스 | 한덕수 총리님, 꿀벌을 구해주세요! 지금, 꿀벌이 위험합니다."
+        content="그린피스 | 사라지는 꿀벌과 야생벌, 더 늦기 전에 구해주세요."
       />
       <meta
         name="description"
-        content="한덕수 총리님, 꿀벌을 구해주세요! 지금, 꿀벌이 위험합니다."
+        content="여러분의 청원으로 벌이 건강한 환경을 만들어주세요!"
       />
       <meta
         property="og:description"
-        content="한덕수 총리님, 꿀벌을 구해주세요! 지금, 꿀벌이 위험합니다."
+        content="여러분의 청원으로 벌이 건강한 환경을 만들어주세요!"
       />
       <meta
         property="og:image"
