@@ -93,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '후쿠시마 오염수 <br/>해양 방류 최종 결정,<br/>지금 행동해야 합니다.',
+                    '우리는 후쿠시마 오염수 방류에 반대합니다.',
                   description: [''],
                 }}
               />
