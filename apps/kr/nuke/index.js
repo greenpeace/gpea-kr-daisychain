@@ -17,8 +17,6 @@ import ThanksBanner from '@components/ResponsiveBanner/thanks';
 import DonationModule from '@components/GP/DonationModule';
 import SignupForm from '@components/GP/KRForm';
 import ScrollToTargetButton from '@components/ScrollToTargetButton/ScrollToTargetButton';
-// Import Contents
-//import Donation from './Donation';
 import Content from './Content';
 import Thankyou from './Thankyou';
 
@@ -29,9 +27,6 @@ import heroBannerImage from './images/GP0STSX96_PressMedia_ed.jpg';
 
 function Index() {
   const dispatch = useDispatch();
-  const signup = useSelector((state) => state?.signup);
-  const { step } = signup;
-  const submitted = useSelector((state) => state?.status?.submitted);
   const theme = useSelector((state) => state?.theme);
   const [ref, inView] = useInView({
     threshold: 0,
@@ -53,13 +48,7 @@ function Index() {
   useEffect(() => {
     dispatch({ type: formActions.SET_FORM, data: formContent }); // set form content from form.json
   }, [dispatch]);
-
-  
-  useEffect(() => {
-    if(thankForm){
-      thankForm.current?.scrollIntoView({ behavior: 'smooth' });
-    }
-  }, [submitted]);
+ 
 
   return (
     <>
@@ -67,21 +56,7 @@ function Index() {
       <SEO />
       <Box ref={thankForm}>
         {(() => { 
-            return submitted ? (
-              <ThanksBanner
-                defaultImage={
-                  theme?.params?.hero_image_desktop ?? heroBannerImage
-                }
-                content={{
-                  title: `${
-                    signup?.data?.LastName
-                      ? signup?.data?.LastName
-                      : '그린피스 서포터즈'
-                  }님, 청원에 함께해 주셔서 감사합니다.`,
-                  description: ['방금 제출해주신 청원으로 국제해양법을 위반하고 있는 일본 정부를 압박하겠습니다. 또한, 여러 국가, 국제기구와 소통해 후쿠시마 오염수 방류를 꼭 막아내겠습니다.'],
-                }}
-              />
-            ) : (
+            return (
               <HeroBanner
                 defaultImage={
                   theme?.params?.hero_image_desktop ?? heroBannerImage
@@ -102,12 +77,12 @@ function Index() {
       </Box>
       <PageContainer>
         <OverflowWrapper>
-        {(submitted && isMobile)?  
+        {(isMobile)?  
           <>
             <Box flex={1} mt={{ base: 10, sm: 60 }} style={{paddingTop: 50,}}>
               <ContentContainer> 
                 {(() => { 
-                    return submitted ? <Thankyou /> : <Content />; 
+                    return <Content />; 
                 })()}
               </ContentContainer>
             </Box>
@@ -115,7 +90,7 @@ function Index() {
               <FormContainer>
                 <Box ref={ref}>
                   {(() => { 
-                        return submitted ? (
+                        return (
                           <DonationModule
                             market={'kr'}
                             language={'ko_KR'}
@@ -123,8 +98,6 @@ function Index() {
                             campaignId={theme?.data?.CampaignId}
                             env={process.env.envParam}
                           />
-                        ) : (
-                          <SignupForm />
                         ); 
                     })()}
                 </Box>
@@ -136,7 +109,7 @@ function Index() {
             <Box flex={1} mt={{ base: 10, sm: 60 }}>
               <ContentContainer>
                 {(() => { 
-                    return submitted ? <Thankyou /> : <Content />; 
+                    return <Content />; 
                 })()}
               </ContentContainer>
             </Box>
@@ -144,7 +117,7 @@ function Index() {
               <FormContainer>
                 <Box ref={ref}>
                   {(() => { 
-                      return submitted ? (
+                      return (
                         <DonationModule
                           market={'kr'}
                           language={'ko_KR'}
@@ -155,8 +128,6 @@ function Index() {
                           campaignId={theme?.data?.CampaignId}
                           env={process.env.envParam}
                         />
-                      ) : (
-                        <SignupForm />
                       ); 
                   })()}
                 </Box>
