@@ -213,12 +213,12 @@ export async function getStaticProps() {
     .then((response) => {
       return response.data.records.find(
         (d) =>
-        d.ProjectName === envProjectName && d.Market === envProjectMarket && d.EventLabel === envCampaign,
+        d.ProjectName === envProjectName && d.EventLabel === envCampaign,
       );
     })
     .catch((error) => console.log(error));
 
-  console.log('Building from ' + envProjectMarket + ':' + envProjectName);
+  console.log('Building from ' + envProjectName + ':' + envCampaign);
 
   !singleResult && console.warn('PROJECT NAME NOT FOUND');
 
