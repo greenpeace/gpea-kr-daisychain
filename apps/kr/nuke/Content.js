@@ -13,7 +13,7 @@ import Image03 from './images/nuke20230724-content03.jpg';
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
   return (
-    <>
+    <div>
       <Heading {...headingProps} color={`theme.${themeInterests}`}>
         35만 2천 2십 1명의 시민 서명
       </Heading>
@@ -93,7 +93,7 @@ const Content = ({ theme }) => {
       <Text as="p" {...paragraphProps}>
         앞으로도 그린피스의 캠페인 활동에 많은 여러분의 관심과 참여를 부탁드립니다.
       </Text>
-    </>
+    </div>
   );
 };
 
