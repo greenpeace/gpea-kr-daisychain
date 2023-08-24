@@ -39,7 +39,8 @@ function Index() {
       setGclid(gclid);
     }
   )
-  //console.log('step isMobile',step, isMobile)
+  
+  console.log('isMobile', isMobile)
 
   useEffect(() => {
     if(window.addGclid && !gclid){window.addGclid();}
@@ -51,7 +52,7 @@ function Index() {
  
 
   return (
-    <>
+    <div>
       <input type="hidden" id="gclid_field" name="gclid_field" onChange={(e)=>{changeGclid(e.target.value);}} />
       <SEO />
       <Box ref={thankForm}>
@@ -78,7 +79,7 @@ function Index() {
       <PageContainer>
         <OverflowWrapper>
         {(isMobile)?  
-          <>
+          <div>
             <Box flex={1} mt={{ base: 10, sm: 60 }} style={{paddingTop: 50, paddingLeft:20, paddingRight:20}}>
               <ContentContainer> 
                 {(() => { 
@@ -89,21 +90,17 @@ function Index() {
             <Box flex={1} ref={mobileForm}>
               <FormContainer>
                 <Box ref={ref}>
-                  {(() => { 
-                        return (
-                          <DonationModule
-                            market={'kr'}
-                            language={'ko_KR'}
-                            campaign={process.env.campaign}
-                            campaignId={theme?.data?.CampaignId}
-                            env={process.env.envParam}
-                          />
-                        ); 
-                    })()}
+                  <DonationModule
+                    market={'kr'}
+                    language={'ko_KR'}
+                    campaign={process.env.campaign}
+                    campaignId={theme?.data?.CampaignId}
+                    env={process.env.envParam}
+                  />
                 </Box>
               </FormContainer>
             </Box>
-          </>
+          </div>
           :
           <Flex flexDirection={{ base: 'column-reverse', md: 'row' }}>
             <Box flex={1} mt={{ base: 10, sm: 60 }}>
@@ -116,20 +113,16 @@ function Index() {
             <Box flex={1} ref={mobileForm}>
               <FormContainer>
                 <Box ref={ref}>
-                  {(() => { 
-                      return (
-                        <DonationModule
-                          market={'kr'}
-                          language={'ko_KR'}
-                          campaign={process.env.campaign}
-                          // campaign={
-                          //   theme?.params?.donation_module_campaign ?? 'nuke'
-                          // }
-                          campaignId={theme?.data?.CampaignId}
-                          env={process.env.envParam}
-                        />
-                      ); 
-                  })()}
+                  <DonationModule
+                    market={'kr'}
+                    language={'ko_KR'}
+                    campaign={process.env.campaign}
+                    // campaign={
+                    //   theme?.params?.donation_module_campaign ?? 'nuke'
+                    // }
+                    campaignId={theme?.data?.CampaignId}
+                    env={process.env.envParam}
+                  />
                 </Box>
               </FormContainer>
             </Box>
@@ -139,7 +132,7 @@ function Index() {
       </PageContainer>
       <PetitionFooter locale={'Korean'} />
       <ScrollToTargetButton target={mobileForm} targetInView={inView} />
-    </>
+    </div>
   );
 }
 
