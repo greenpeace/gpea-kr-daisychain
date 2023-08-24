@@ -79,7 +79,7 @@ function Index() {
         <OverflowWrapper>
         {(isMobile)?  
           <>
-            <Box flex={1} mt={{ base: 10, sm: 60 }} style={{paddingTop: 50,}}>
+            <Box flex={1} mt={{ base: 10, sm: 60 }} style={{paddingTop: 50, paddingLeft:20, paddingRight:20}}>
               <ContentContainer> 
                 {(() => { 
                     return <Content />; 
