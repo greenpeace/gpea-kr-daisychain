@@ -22,7 +22,7 @@ const Content = ({ theme }) => {
       </Text>
 
       <Text as="p" {...paragraphProps}>
-        2023 - 5월 일 최고기온 30℃ 이상 기록, 전국 대부분 지역에서 이상고온 발생
+        2023 - 7월, 지구 표면과 해수면 평균기온이 관측이래 가장 높았던 달 (세계기상기구 WMO)
       </Text>
 
       <Text as="p" {...paragraphProps}>
