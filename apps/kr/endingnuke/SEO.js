@@ -18,23 +18,23 @@ const SEO = () => {
       /> */}
       {/* title */}
       <title>
-        기후위기로 인한 재난, 지금 행동해야 합니다! | 그린피스
+        원전 말고 안전! | 그린피스
       </title>
       <meta
         property="og:title"
-        content="그린피스 | 기후위기로 인한 재난, 지금 행동해야 합니다!"
+        content="그린피스 | 원전 말고 안전!"
       />
       <meta
         name="description"
-        content="대한민국 정부와 국회에 함께 요구해주세요."
+        content="한국 정부가 원전말고 안전을 선택할 수 있도록 함께 동참해주세요!"
       />
       <meta
         property="og:description"
-        content="대한민국 정부와 국회에 함께 요구해주세요."
+        content="한국 정부가 원전말고 안전을 선택할 수 있도록 함께 동참해주세요!"
       />
       <meta
         property="og:image"
-        content="https://gpseoulwebserver.co.kr/asset/images/ce/ce-20230917-main-min.jpg"
+        content="https://gpseoulwebserver.co.kr/asset/images/endingnuke/endingnuke-main.jpg"
       />
       <Script src="https://www.googleoptimize.com/optimize.js?id=GTM-K8RRN9R" async=""></Script>
     </Head>

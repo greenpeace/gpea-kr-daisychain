@@ -23,7 +23,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/ce-20230917-main-min.jpg';
+import heroBannerImage from './images/endingnuke-main.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -76,8 +76,8 @@ function Index() {
                     signup?.data?.LastName
                       ? signup?.data?.LastName
                       : '그린피스 서포터즈'
-                  }님, 함께해 주셔서 감사합니다.`,
-                  description: ['방금 제출해주신 청원으로 탄소배출을 줄이지 않는 정부와 국회를 압박하겠습니다. 또한, 여러 국가, 국제기구와 소통해 함께 기후위기를 꼭 막아내겠습니다.'],
+                  }님, 한국 정부가 원전 말고 안전을 선택할 수 있도록 함께 동참해주셔서 감사합니다.`,
+                  description: ['여러분의 청원을 모아 한국 정부가 탈원전을 앞당길 수 있도록 하는데 사용할 예정입니다.'],
                 }}
               />
             ) : (
@@ -92,7 +92,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '기후위기로 인한 재난,<br />지금 행동해야 합니다.',
+                    '우리가 원하는 건 원전 말고 안전!',
                   description: [''],
                 }}
               />
