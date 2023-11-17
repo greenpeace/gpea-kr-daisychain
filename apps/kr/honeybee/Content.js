@@ -76,14 +76,6 @@ const Content = ({ theme }) => {
           청원에 함께 해주세요!</b>
       </Text>
 
-      <Box {...paragraphProps} style={{border: '2px solid #000'}}>
-        <Image src={Image04} layout="fill" alt="Greenpeace" />
-      </Box>
-
-      <Text as="p" {...paragraphProps} style={{fontWeight: "bold"}}>
-      10월 31일까지 참여해주신 분 중 10명을 추첨하여 꿀벌에게 필요한 꽃이 피는 씨앗폭탄을 선물로 드립니다. (당첨자 개별 연락)
-      </Text>
-
     </>
   );
 };
