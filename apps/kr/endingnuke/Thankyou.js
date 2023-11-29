@@ -23,7 +23,7 @@ const Thankyou = () => {
       <Heading {...headingProps}>{`캠페인 활동을 지속하기 위해 ${signup?.LastName}님의 후원이 꼭 필요합니다.`}</Heading>
 
       <Text as="p" {...paragraphProps}>
-        지금 후원을 시작해주시면,
+        여러분의 후원은 100% 재생에너지 전환의 신속한 실현과 기후위기 대응 캠페인을 성공적으로 이끌어갈 수 있는 큰 힘이 됩니다. 보다 지속적인 참여를 원하신다면, 그린피스의 후원자가 되어주세요!
       </Text>
 
       {/* <Text as="li" {...lineProps}>
