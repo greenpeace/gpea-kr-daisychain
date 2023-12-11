@@ -30,7 +30,7 @@ const Content = ({ theme }) => {
 
       <Text as="p" {...paragraphProps}>
         우리에겐 또 다른 원전 사고를 막을 수 있는 시간이 있습니다. 그래서, 지금 우리가 내릴 선택이 더욱 중요합니다.
-      </Text>;
+      </Text>
 
 
       <Box {...paragraphProps}>
