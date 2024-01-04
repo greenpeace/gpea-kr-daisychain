@@ -1,9 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import {BrowserView, MobileView, isBrowser, isMobile} from "react-device-detect";
+import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 // Import library
-import { useInView } from 'react-intersection-observer';
-import { Box, Flex, Image } from '@chakra-ui/react';
+import { Image } from '@chakra-ui/react';
 // Import custom components
 import DonationModule from '@components/GP/DonationModule';
 
@@ -38,7 +36,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 function Index() {
   const theme = useSelector((state) => state?.theme);
@@ -49,6 +47,8 @@ function Index() {
     },[]
   )
   //console.log('step isMobile',step, isMobile)
+
+  const [year, setYear] = useState(new Date().getFullYear());
 
   useEffect(() => {
     if(window.addGclid && !gclid){window.addGclid();}
@@ -333,7 +333,7 @@ function Index() {
                 <div className="footer__link-url align-center">
                     <a href="https://www.greenpeace.org/korea/">홈페이지</a> | <a href="https://www.greenpeace.org/korea/privacy-and-cookies/">개인정보 보호정책</a> | <a href="https://www.greenpeace.org/korea/terms-and-conditions/">저작권</a> | <a href="https://www.greenpeace.org/korea/about/contact/">연락처</a> | <a href="https://www.greenpeace.org/korea/press-media/press-releases/">보도자료와 미디어</a> | <a href="https://www.greenpeace.org/korea/about/overview/">그린피스 소개</a>
                 </div>
-                <div className="footer__link-copy align-center">Copyright © 2023 Greenpeace. All Rights Reserved. | 재단법인 그린피스 | 대표자: SZE Pang Cheung (쯔이팽청) | 주소: 서울시 용산구 한강대로 257 청룡빌딩 6층 (우편번호: 04322) | 고유번호: 105-82-21567 </div>
+                <div className="footer__link-copy align-center">Copyright © {year} Greenpeace. All Rights Reserved. | 재단법인 그린피스 | 대표자: SZE Pang Cheung (쯔이팽청) | 주소: 서울시 용산구 한강대로 257 청룡빌딩 6층 (우편번호: 04322) | 고유번호: 105-82-21567 </div>
             </div>
         </footer>
         <div className="mobile__submit-area" style={{ display: fixedButtonDisplay }}>
