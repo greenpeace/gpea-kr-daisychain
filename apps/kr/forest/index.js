@@ -25,7 +25,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/woodside-hero-20230816.jpg';
+import heroBannerImage from './images/31016010-forest1.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -77,8 +77,8 @@ function Index() {
                     signup?.data?.LastName
                       ? signup?.data?.LastName
                       : '그린피스 서포터즈'
-                  }님, 고래의 낙원을 지키는 데 함께해 주셔서 감사합니다!`,
-                  description: [''],
+                  }님, 청원에 함께해 주셔서 감사합니다.`,
+                  description: ['보내주신 청원으로 우리 세금이 산림 파괴에 사용되지 않도록 정책 변화를 적극적으로 요구하여 무차별하게 파괴되는 산림을 살리기 위해 노력하겠습니다.'],
                 }}
               />
             ) : (
@@ -93,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '파괴적인 심해 가스 채굴을 중단하도록 도와주세요.',
+                    '우리 세금이 산림 파괴에 사용되는 것을 멈춰주세요.',
                   description: [''],
                 }}
               />
