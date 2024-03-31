@@ -7,7 +7,7 @@ import nProgress from 'nprogress';
 import theme from '@common/theme/theme';
 //import 'nprogress/nprogress.css';
 //import '@common/styles/index.scss';
-import '@common/styles/ryu-styles.css';
+//import '@common/styles/ryu-styles.css';
 
 Router.events.on('routeChangeStart', nProgress.start);
 Router.events.on('routeChangeError', nProgress.done);
