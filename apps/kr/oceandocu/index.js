@@ -58,7 +58,7 @@ function Index() {
 
     const checkScreenWidth = () => {
         const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        return screenWidth < 1024;
+        return screenWidth < 1025;
     };
 
     useEffect(() => {
@@ -108,7 +108,8 @@ function Index() {
                         <div className="main__logo">
                         </div>
                         <div className="main__text">
-                            <span className="main__join-number">현재까지 <span className="signed-number">{numberOfResponses}</span>명이 함께 해주셨습니다!</span> 
+                            {/* <span className="main__join-number">현재까지 <span className="signed-number">{numberOfResponses}</span>명이 함께 해주셨습니다!</span>  */}
+                            <span className="main__join-number">현재까지 848명이 함께 해주셨습니다!</span>
                             <div className="main__title">
                                 우리와 함께,<br/><span>바다의 마지막 신호를</span><br/> 들어주세요
                                 <a href="#form-section" className="to-form">후원하기</a>
@@ -123,7 +124,7 @@ function Index() {
             <section className="main__form-area" id="form-section">
                 <div className="main__form-center"> 
                     <div className="main__form-text">
-                    후원자님과 함께 만드는<br/> <b>다큐멘터리를 통해</b> 해양 오염의 새<br/>로운 면을 밝히고, 바다를 구할 수 <br/>있는 해결책<b> '해양보호구역'을 <br/>알릴 수 있습니다.</b>
+                    후원으로 제작 되는<br/> <b>다큐멘터리를 통해 해양 오염의<br/> 새로운 면을 밝히고,<br/></b> 바다를 구할 수 있는 해결책<b><br/> '해양보호구역' 지정을 <br/>알릴 수 있습니다.</b>
                     </div>
                     <div className="main__form-donate">
                         <DonationModule
@@ -151,18 +152,51 @@ function Index() {
                     <Image src="https://gpseoulwebserver.co.kr/donation/oceandocu/api/story_image2.jpg" alt="오션다큐해녀"/>
                 </div>
             </section>
+            <section className="main__activity gift">
+                <h1 className="align-center pc">지금 그린피스에 후원하고 특별한 선물을 받으세요</h1>
+                <h1 className="align-center mobile">지금 그린피스에 후원하고 <br/>특별한 선물을 받으세요</h1>
+                <div className="main__activity-container">
+                    <div className="main__activity-item">
+                        <div className="main__activity-item-number">
+                            <span>일시/정기 후원</span>
+                        </div>
+                        <Image src="https://gpseoulwebserver.co.kr/donation/oceandocu/api/gift_image1.jpg" alt="오션다큐 후원자 엔딩크레딧"/>
+                        <div className="main__activity-item-content">
+                            <span className="main__activity-item-text white">정기 및 일시 후원에 참여하시는 모든 분들의 이름을 <b className="white">시네마 엔딩 크레딧에 넣어드립니다</b></span>
+                        </div>
+                    </div>
+                    <div className="main__activity-item">
+                        <div className="main__activity-item-number">
+                            <span>정기 후원</span>
+                        </div>
+                        <Image src="https://gpseoulwebserver.co.kr/donation/oceandocu/api/gift_image2.jpg" alt="정기후원 페트병 재활용 나노백 "/>
+                        <div className="main__activity-item-content">
+                            <span className="main__activity-item-text white">정기 후원 시, 100% 제주 폐페트병을 재활용해 제작한 <b className="white">나노백을 선물로 드립니다</b></span>
+                        </div>
+                    </div>
+                    <div className="main__activity-item">
+                        <div className="main__activity-item-number">
+                            <span>정기 후원</span>
+                        </div>
+                        <Image src="https://gpseoulwebserver.co.kr/donation/oceandocu/api/gift_image3.jpg" alt="정기후원 시사회 초대"/>
+                        <div className="main__activity-item-content">
+                            <span className="main__activity-item-text white">정기 후원자 중 추첨을 통해 <b className="white">시사회 초대장을 발송해드립니다</b> (프리미어 진행 예정)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="main__donation-asking-full">
                 <div className="image-area">
                 </div>
                 <div className="content-area">
-                    <h1 className="green">여러분의 후원이 푸른 바다를 지켜내는 투명한 힘이 됩니다!</h1>
+                    <h1 className="green">여러분의 후원이<br className='mobile'/> 푸른 바다를 지켜내는<br className='mobile'/> 투명한 힘이 됩니다!</h1>
                     <p className="white align-left">그린피스는 다큐멘터리 촬영지인 제주 바다를 포함해 살아 숨 쉬는 전 세계의 바다를 보호하기 위해 활동하고 있습니다.</p>
                     <p className="white align-left">여러분의 후원으로 해양 파괴의 심각성을 알리고, 현장조사와 연구를 통해 바다를 지키기 위한 해결책을 제시할 수 있습니다.</p>
                     <a href="#form-section" className="to-form">함께하기</a>
                 </div>
             </section>
             <section className="main__activity general">
-                <h1>기후위기에 대응하는 그린피스의 활동</h1>
+                <h1>기후위기에 대응하는<br className='mobile'/> 그린피스의 활동</h1>
                 <p className="align-left">그린피스는 전 세계에서 기후 위기를 막기 위해 활발하게 활동하고 있습니다.</p>
                 <div className="main__activity-container">
                     <div className="main__activity-item">
@@ -204,8 +238,8 @@ function Index() {
                 </div>
             </section>
             <section className="main__carousel align-center">
-                <h1>그린피스와 함께 변화를 이끌어주세요!</h1>
-                <p>환경과 미래를 위해 동참한 사람들의 목소리를 들어보세요.</p>
+                <h1>그린피스와 함께<br className='mobile'/> 변화를 이끌어주세요!</h1>
+                <p>환경과 미래를 위해 동참한 사람들의<br className='mobile'/> 목소리를 들어보세요.</p>
 
                 <div className="carousel">
                     <div className="carousel-body">
