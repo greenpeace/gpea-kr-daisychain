@@ -109,7 +109,7 @@ function Index() {
                         </div>
                         <div className="main__text">
                             {/* <span className="main__join-number">현재까지 <span className="signed-number">{numberOfResponses}</span>명이 함께 해주셨습니다!</span>  */}
-                            <span className="main__join-number">현재까지 848명이 함께 해주셨습니다!</span>
+                            <span className="main__join-number">현재까지 1258명이 함께 해주셨습니다!</span>
                             <div className="main__title">
                                 우리와 함께,<br/><span>바다의 마지막 신호를</span><br/> 들어주세요
                                 <a href="#form-section" className="to-form">후원하기</a>
@@ -196,8 +196,8 @@ function Index() {
                 </div>
             </section>
             <section className="main__activity general">
-                <h1>기후위기에 대응하는<br className='mobile'/> 그린피스의 활동</h1>
-                <p className="align-left">그린피스는 전 세계에서 기후 위기를 막기 위해 활발하게 활동하고 있습니다.</p>
+                <h1>바다를 보호하기 위한<br className='mobile'/> 그린피스의 활동</h1>
+                <p className="align-left">그린피스는 전 세계에서 바다보호를 위해 활발하게 활동하고 있습니다.</p>
                 <div className="main__activity-container">
                     <div className="main__activity-item">
                         <Image src="https://gpseoulwebserver.co.kr/donation/oceandocu/api/gp_act_1.jpg" alt="현장 조사/연구 결과를 바탕으로 보고서 및 자료 발간"/>
@@ -239,7 +239,7 @@ function Index() {
             </section>
             <section className="main__carousel align-center">
                 <h1>그린피스와 함께<br className='mobile'/> 변화를 이끌어주세요!</h1>
-                <p>환경과 미래를 위해 동참한 사람들의<br className='mobile'/> 목소리를 들어보세요.</p>
+                <p>바다보호를 위해 함께한 사람들의<br className='mobile'/> 목소리를 들어보세요.</p>
 
                 <div className="carousel">
                     <div className="carousel-body">
