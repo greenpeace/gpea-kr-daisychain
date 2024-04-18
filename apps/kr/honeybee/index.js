@@ -25,7 +25,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/GP0STSX96_PressMedia_ed.jpg';
+import heroBannerImage from './images/herobanner.jpeg';
 
 function Index() {
   const dispatch = useDispatch();

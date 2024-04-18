@@ -10,8 +10,6 @@ import {
 
 import Image01 from './images/GP0STU61Y_PressMedia.jpg';
 import Image02 from './images/GP01B4T_PressMedia.jpg';
-import Image03 from './images/GP1STQ8D_PressMedia.jpg';
-import Image04 from './images/honeybee-event.jpg';
 
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
@@ -76,6 +74,15 @@ const Content = ({ theme }) => {
           청원에 함께 해주세요!</b>
       </Text>
 
+      <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/OIofzKYH7Vs"
+        title="세상 하나뿐인 꿀벌 식당에 여러분을 초대합니다"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </>
   );
 };
