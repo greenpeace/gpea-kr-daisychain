@@ -20,7 +20,7 @@ const Thankyou = () => {
         여러분의 청원으로 환경부 등 다양한 정부 부처, 기업들이 무분별한 플라스틱 사용규제에 적극 나서도록 바꿔나갈 것입니다. 이를 위해 국내외 전문가들과 함께 과학적인 근거로 정부를 설득하겠습니다. 
       </Text>
 
-      <Heading {...headingProps}>플라스틱 제로 캠페인을 위한 ({signup.LastName})님의 후원이 꼭 필요합니다.</Heading>
+      <Heading {...headingProps}>플라스틱 제로 캠페인을 위한 {signup.LastName}님의 후원이 꼭 필요합니다.</Heading>
 
       <Text as="p" {...paragraphProps}>
         그린피스는 전 세계 50개국에서 각 지역 시민들의 후원으로 플라스틱 사용을 줄이기 위한 활동을 지속하고 있습니다. 
