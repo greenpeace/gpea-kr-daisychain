@@ -7,6 +7,7 @@ import SEO from './SEO';
 
 function Index() {
     const theme = useSelector((state) => state?.theme);
+    const { query } = useRouter();
     const lowerCaseQuery = Object.keys(query).reduce((result, key) => {
         result[ key.toLowerCase() ] = query[ key ];
         return result;
