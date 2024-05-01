@@ -7,8 +7,12 @@ import SEO from './SEO';
 
 function Index() {
     const theme = useSelector((state) => state?.theme);
-    const { query } = useRouter();
-    const envCampaignId = query.CampaignId;
+    const lowerCaseQuery = Object.keys(query).reduce((result, key) => {
+        result[ key.toLowerCase() ] = query[ key ];
+        return result;
+    }, {});
+
+    const envCampaignId = lowerCaseQuery[ 'campaignid' ];
     const [ gclid, setGclid ] = React.useState(null);
     const changeGclid = React.useCallback(
         (gclid) => {
