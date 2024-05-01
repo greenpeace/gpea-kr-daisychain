@@ -20,9 +20,9 @@ const SEO = () => {
       <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="author" content="Greenpeace"/>
-      <meta name="description" content="후원자님과 함께 만드는 다큐멘터리를 통해 해양 오염의 새로운 면을 밝히고, 바다를 구할 수 있는 해결책 ‘해양보호구역’을 알릴 수 있습니다."/>
+      <meta name="description" content="우리 아이들이 살아갈, 기후위기가 해결된 미래를 만들어 주세요"/>
       <meta name="title" content="우리 아이들에게 건강한 미래를 선물하세요 | 그린피스"/>
-      <meta property="og:title" content="그린피스와 함께, 바다의 마지막 신호를 들어주세요. | 그린피스"/>
+      <meta property="og:title" content="우리 아이들에게 건강한 미래를 선물하세요 | 그린피스"/>
       <meta property="og:site_name" content="그린피스 후원하기"/>
       <meta property="og:description" content="우리 아이들이 살아갈, 기후위기가 해결된 미래를 만들어 주세요"/>
       <meta property="og:image" content="https://gpseoulwebserver.co.kr/donation/child/api/child-main.jpg"/>

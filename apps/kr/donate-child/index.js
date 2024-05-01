@@ -148,13 +148,15 @@ function Index() {
                                 <div className="chevron-right"></div>
                             </div>
                         </div>
-                        <div className="content-area">
+                        <div className="content-area quotation">
+                            <p className="quotation-top"></p>
                             <h1 className="pc">돈보다 소중한 선물은 건강한 미래</h1>
-                            <h1 className="mobile">돈보다 소중한 선물은<br />건강한 미래</h1>
+                            <h1 className="mobile">돈보다 소중한 선물은<br/>건강한 미래</h1>
                             <p className="align-left">올해 1월 1일, 소중한 아기가 태어났어요. 의사로 일하면서 항상 수많은 일회용품에 둘러싸여 살다보니, 환경에 대한 관심이 많았어요. 우리 아이가 건강히 숨쉬며 살아갈 수 있는 미래를 선물해 주고 싶어서 아이 이름으로 후원도 시작했죠.</p>
                             <p className="align-left">아이가 태어나면 하나라도 더 해주고 싶은 마음에 이것 저것 선물을 사주지만, 저는 무엇보다 좋은 환경을 물려주는 게 더 중요하다고 생각해요.</p>
                             <p className="align-left">더 중요한 건, 우리 아이들도 그 다음 세대에게 좋은 환경을 물려주고 싶어하는 어른으로 자라나는 거예요. 우리 어른들이 그런 마음을 물려줘야 한다고 생각해요.</p>
                             <p className="align-right font-sm">-이미린 후원자님-</p>
+                            <p className="quotation-bottom"></p>
                         </div>
                     </section>
                     <section className="main__activity general">
