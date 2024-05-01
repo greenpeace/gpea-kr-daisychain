@@ -21,17 +21,17 @@ const SEO = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta name="author" content="Greenpeace"/>
       <meta name="description" content="후원자님과 함께 만드는 다큐멘터리를 통해 해양 오염의 새로운 면을 밝히고, 바다를 구할 수 있는 해결책 ‘해양보호구역’을 알릴 수 있습니다."/>
-      <meta name="title" content="그린피스와 함께, 바다의 마지막 신호를 들어주세요. | 그린피스"/>
+      <meta name="title" content="우리 아이들에게 건강한 미래를 선물하세요 | 그린피스"/>
       <meta property="og:title" content="그린피스와 함께, 바다의 마지막 신호를 들어주세요. | 그린피스"/>
       <meta property="og:site_name" content="그린피스 후원하기"/>
-      <meta property="og:description" content="후원자님과 함께 만드는 다큐멘터리를 통해 해양 오염의 새로운 면을 밝히고, 바다를 구할 수 있는 해결책 ‘해양보호구역’을 알릴 수 있습니다."/>
-      <meta property="og:image" content="https://gpseoulwebserver.co.kr/donation/oceandocu/api/banner_mobile.jpg"/>
+      <meta property="og:description" content="우리 아이들이 살아갈, 기후위기가 해결된 미래를 만들어 주세요"/>
+      <meta property="og:image" content="https://gpseoulwebserver.co.kr/donation/child/api/child-main.jpg"/>
       <meta property="og:type" content="website"/>
-      <meta property="og:url" content="https://cloud.greensk.greenpeace.org/api-donate-oceandocu"/>
-      <meta name="keywords" content="그린피스, 그린피스오션, 오션다큐멘터리, 그린피스 다큐멘터리, 그린피스다큐, 제주도, 바다보호, 바다쓰레기, 해양보호구역"/>
+      <meta property="og:url" content="https://cloud.greensk.greenpeace.org/api-donate-child"/>
+      <meta name="keywords" content="그린피스"/>
       <link rel="stylesheet" href="https://gpseoulwebserver.co.kr/asset/css/normalize.css" />
       <link rel="stylesheet" href="https://cloud.greensk.greenpeace.org/css-supporter-volunteer-slick" />
-      <link rel="stylesheet" href="https://gpseoulwebserver.co.kr/donation/oceandocu/api/oceandocu-styles.css" />
+      <link rel="stylesheet" href="https://gpseoulwebserver.co.kr/donation/child/api/child-styles.css" />
       <link rel="icon" type="image/x-icon" href="https://www.greenpeace.org/static/planet4-hongkong-stateless/2021/09/01aca3df-favicon-96x96-1.png" />
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-jquery-1.12.4.min"></Script>
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-slick.min"></Script>
