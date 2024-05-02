@@ -37,7 +37,7 @@ const SEO = () => {
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-slick.min"></Script>
       <Script type="text/javascript" src="https://cloud.greensk.greenpeace.org/js-supporter-volunteer-volunteer_201103"></Script>
       <Script type="text/javascript" src="./carousel.js"></Script>
-      <title>그린피스와 함께, 바다의 마지막 신호를 들어주세요. | 그린피스</title>
+      <title>우리 아이들에게 건강한 미래를 선물하세요 | 그린피스</title>
     </Head>
   );
 };
