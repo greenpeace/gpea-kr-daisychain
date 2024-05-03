@@ -1,41 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-// Import library
 import { Image } from '@chakra-ui/react';
-// Import custom components
 import DonationModule from '@components/GP/DonationModule';
-
-// Import Contents
 import SEO from './SEO';
-// Import static
-// import usage01 from "./images/usage01.png";
-// import usage02 from "./images/usage02.png";
-// import usage03 from "./images/usage03.png";
-// import usage04 from "./images/usage04.png";
-// import usage05 from "./images/usage05.png";
-// import usage06 from "./images/usage06.png";
-
-// import activity01 from "./images/activity01.png";
-// import activity02 from "./images/activity02.png";
-// import activity03 from "./images/activity03.png";
-// import activity04 from "./images/activity04.png";
-
-// import christina from "./images/christina.png";
-// import ryu_big from "./images/ryu_big.png";
-// import byungwook_yoo from "./images/byungwook_yoo.png";
-// import yoo_daeeol from "./images/yoo_daeeol.png";
-// import kt from "./images/kt.png";
-// import jude from "./images/jude.png";
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
-// import required modules
 import { Navigation, Pagination } from "swiper";
 
 function Index() {
@@ -121,22 +92,6 @@ function Index() {
                     </a>
                 </div>
             </section>
-            <section className="main__form-area" id="form-section">
-                <div className="main__form-center"> 
-                    <div className="main__form-text">
-                    후원으로 제작 되는<br/> <b>다큐멘터리를 통해 해양 오염의<br/> 새로운 면을 밝히고,<br/></b> 바다를 구할 수 있는 해결책<b><br/> '해양보호구역' 지정을 <br/>알릴 수 있습니다.</b>
-                    </div>
-                    <div className="main__form-donate">
-                        <DonationModule
-                        market={'kr'}
-                        language={'ko_KR'}
-                        campaign={process.env.campaign}
-                        campaignId={theme?.data?.CampaignId}
-                        env={process.env.envParam}
-                        />
-                    </div>
-                </div>
-            </section>
             <section className="main__donation-asking-half">
                 <div className="content-area">
                     <span>“SEAGNAL: The Ocean’s Last Call”</span>
@@ -182,6 +137,22 @@ function Index() {
                         <div className="main__activity-item-content">
                             <span className="main__activity-item-text white">정기 후원자 중 추첨을 통해 <b className="white">시사회 초대장을 발송해드립니다</b> (프리미어 진행 예정)</span>
                         </div>
+                    </div>
+                </div>
+            </section>
+            <section className="main__form-area" id="form-section">
+                <div className="main__form-center">
+                    <div className="main__form-text">
+                        후원으로 제작 되는<br /> <b>다큐멘터리를 통해 해양 오염의<br /> 새로운 면을 밝히고,<br /></b> 바다를 구할 수 있는 해결책<b><br /> '해양보호구역' 지정을 <br />알릴 수 있습니다.</b>
+                    </div>
+                    <div className="main__form-donate">
+                        <DonationModule
+                            market={'kr'}
+                            language={'ko_KR'}
+                            campaign={process.env.campaign}
+                            campaignId={theme?.data?.CampaignId}
+                            env={process.env.envParam}
+                        />
                     </div>
                 </div>
             </section>
