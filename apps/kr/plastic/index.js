@@ -25,8 +25,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImagePC from './images/ryu_plastic_last.jpg';
-import heroBannerImageMB from './images/ryu_mobile.jpg';
+import heroBanner from './images/yonggitest-main-0521.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -71,21 +70,21 @@ function Index() {
             return submitted ? (
               <ThanksBanner
                 defaultImage={
-                  theme?.params?.hero_image_desktop ?? (isMobile)?heroBannerImageMB:heroBannerImagePC
+                  theme?.params?.hero_image_desktop ?? (isMobile)?heroBanner:heroBanner
                 }
                 content={{
                   title: `${
                     signup?.data?.LastName
                       ? signup?.data?.LastName
                       : '그린피스 서포터즈'
-                  }님, 캠페인에 함께해주셔서 감사합니다!`,
-                  description: [''],
+                  }님, 청원에 함께해 주셔서 감사합니다.`,
+                  description: ['보내주신 청원으로 음료 기업에게 책임감 있는 행동을 적극 요구하여 깨끗하고 안전한 지구를 만드는데 노력하겠습니다. '],
                 }}
               />
             ) : (
               <HeroBanner
                 defaultImage={
-                  theme?.params?.hero_image_desktop ?? (isMobile)?heroBannerImageMB:heroBannerImagePC
+                  theme?.params?.hero_image_desktop ?? (isMobile)?heroBanner:heroBanner
                 }
                 content={{
                   title:
@@ -94,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '플라스틱 없는 장보기를 위해 대형마트에 요구해주세요!',
+                    '음료 기업이 일회용 플라스틱 쓰레기를 더이상 생산하지 않아야 합니다.',
                   description: [''],
                 }}
               />
