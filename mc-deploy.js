@@ -104,7 +104,7 @@ console.info('4. Content patched');
 let sftpSetting = {
   host: '34.64.112.215', // required
   username: 'engagement', // Optional. Use empty username for anonymous access.
-  password: 'HappyENwebserver@2022', // Required if username is not empty, except when requiresPassword: false
+  password: 'enwebserver2022', // Required if username is not empty, except when requiresPassword: false
   port: 22, // Optional
 };
 
