@@ -17,7 +17,7 @@ import {
 } from '@common/components/TrackingUtils';
 
 /* Determine the returned project index by env variable */
-const DynamicComponent = dynamic(() => import(`apps/${process.env.project}`), {
+const DynamicComponent = dynamic(() => import(`apps`), {
   loading: () => <p>loading</p>,
 });
 
