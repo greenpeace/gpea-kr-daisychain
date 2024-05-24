@@ -13,7 +13,6 @@ console.info('=======================> next.config');
 const nextConfig = {
   // FIXME: 여기서 환경 변수 재정의 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   env: {
-    project: process.env.PROJECT,
     campaign: process.env.CAMPAIGN,
     envParam: process.env.ENV_PARAM,
     projectName: process.env.PROJECT_NAME,
