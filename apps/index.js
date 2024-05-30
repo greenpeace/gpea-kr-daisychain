@@ -79,22 +79,16 @@ function Index() {
         };
     }, []);
 
-    const [numberOfResponsesString, setNumberOfResponsesString] = useState('0');
-    const [numberOfResponses, setNumberOfResponses] = useState(0);
+  const [numberOfResponses, setNumberOfResponses] = useState(0);
 
-    useEffect(() => {
-        const numberOfResponses = window.numberOfResponses;
-        if (!isNaN(numberOfResponses)) {
-            setNumberOfResponsesString(numberOfResponses.toString());
-        }
-    }, []);
+  useEffect(() => {
+    const numberOfResponsesFromWindow = window.numberOfResponses;
+    if (!isNaN(numberOfResponsesFromWindow)) {
+      setNumberOfResponses(numberOfResponsesFromWindow);
+    }
+  }, []);
 
-    useEffect(() => {
-        const parsedNumberOfResponses = parseInt(numberOfResponsesString, 10);
-        if (!isNaN(parsedNumberOfResponses)) {
-        setNumberOfResponses(parsedNumberOfResponses);
-        }
-    }, [numberOfResponsesString]);
+  const formatter = new Intl.NumberFormat('en-US');
 
   return (
     <>
@@ -111,7 +105,7 @@ function Index() {
                         <div className="main__logo">
                         </div>
                         <div className="main__text">
-                            <span className="main__join-number">현재까지 <span className="signed-number">{numberOfResponses}</span>명이 함께 해주셨습니다!</span> 
+                            <span className="main__join-number">현재까지 <span className="signed-number">{formatter.format(numberOfResponses)}</span>명이 함께 해주셨습니다!</span> 
                             <div className="main__title">
                                 저와 함께,<br /><span>우리의 지구를 위해</span><br /> 행동해주세요
                                 <a href="#form-section" className="to-form">후원하기</a>
