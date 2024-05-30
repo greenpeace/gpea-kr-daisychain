@@ -59,7 +59,7 @@ const MyForm = (props) => {
     numberOfTarget,
   } = props;
   //const [birthDateYear, setBirthDateYear] = useState([]);
-  //const [progressNumber, setProgressNumber] = useState(0);
+  const [progressNumber, setProgressNumber] = useState(0);
   const themeInterests = theme.interests;
 
   // useEffect(() => {
@@ -78,21 +78,21 @@ const MyForm = (props) => {
   //   initSuggestion();
   // }, []);
 
-  // useEffect(() => {
-  //   const currentNumber = numberOfResponses;
-  //   const currentNumberOfTarget = numberOfTarget ? numberOfTarget : 10000;
-  //   const number =
-  //     Math.round((currentNumber / currentNumberOfTarget) * 10000) / 100;
-  //   if (isNaN(number)) {
-  //     return;
-  //   }
+  useEffect(() => {
+    const currentNumber = numberOfResponses;
+    const currentNumberOfTarget = numberOfTarget ? numberOfTarget : 10000;
+    const number =
+      Math.round((currentNumber / currentNumberOfTarget) * 10000) / 100;
+    if (isNaN(number)) {
+      return;
+    }
 
-  //   const timer = () => setTimeout(() => setProgressNumber(`${number}%`), 1000);
-  //   const timerId = timer();
-  //   return () => {
-  //     clearTimeout(timerId);
-  //   };
-  // }, [numberOfResponses]);
+    const timer = () => setTimeout(() => setProgressNumber(`${number}%`), 1000);
+    const timerId = timer();
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, [numberOfResponses]);
 
   // //setting additional fileds for formik
   // useEffect(() => {

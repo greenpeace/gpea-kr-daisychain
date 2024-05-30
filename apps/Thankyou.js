@@ -14,7 +14,7 @@ const Thankyou = () => {
   const themeInterests = theme.interests;
   return (
     <>
-      <Heading {...headingProps}>산림 보호 활동을 위해 OOO님의 후원이 꼭 필요합니다.</Heading>
+      <Heading {...headingProps}>{`산림 보호 활동을 위해 ${signup.LastName}님의 후원이 꼭 필요합니다.`}</Heading>
 
       <Text as="p" {...paragraphProps}>
        정부의 잘못된 정책을 바로잡고, 우리에게 소중한 자연 생태계를 지켜낼 수 있도록 후원으로 동참해주세요.
