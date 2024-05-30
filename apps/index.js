@@ -25,7 +25,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBanner from './images/yonggitest-main-0521.jpg';
+import heroBanner from './images/yonggitest-main-0530.jpg';
 
 function Index() {
   const dispatch = useDispatch();

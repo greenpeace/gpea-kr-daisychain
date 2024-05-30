@@ -5,10 +5,11 @@ import {
   headingProps,
   paragraphProps,
   captionProps,
-  lineProps
+  lineProps,
+  linePropsLast
 } from '@common/styles/components/contentStyle';
 
-import Image01 from './images/yonggitest-content1-0521.jpg';
+import Image01 from './images/yonggitest-content1-0530.jpg';
 
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
@@ -28,7 +29,7 @@ const Content = ({ theme }) => {
       </Text>
       
       <Box {...paragraphProps}>
-        <Image src={Image01} layout="fill" alt="Greenpeace" />
+        <Image src={Image01} layout="fill" alt="국제 플라스틱 협의 회의장 앞에 버려진 일회용 페트병을 쌓아 플라스틱 생산 위기를 알리는 활동" />
       </Box>
 
       <Text as="p" {...paragraphProps}>
@@ -43,7 +44,7 @@ const Content = ({ theme }) => {
       일회용 플라스틱 대신 이용할 수 있는 리필, 재사용 시스템을 적극적으로 도입해주세요.
       </Text>
 
-      <Text as="li" {...lineProps}>
+      <Text as="li" {...linePropsLast}>
       플라스틱 생산 감축과 재사용과 리필 기반의 목표를 포함한 강력한 국제 플라스틱 협약에 동의해주세요.
       </Text>
 

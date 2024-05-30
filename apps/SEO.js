@@ -35,7 +35,7 @@ const SEO = () => {
       <meta name="keywords" content="플라스틱제로, 제로웨이스트, 미니멀라이프, 친환경제품, 환경보호, 국제플라스틱협약, 국제플라스틱조약, 코카콜라, 롯데칠성음료, 일회용 플라스틱 쓰레기, 플라스틱 문제, 플라스틱 오염, 플라스틱 오염 해결방안, 플라스틱 오염 해결책" />
       <meta
         property="og:image"
-        content="https://gpseoulwebserver.co.kr/petitions/yonggitest/yonggitest-content01.jpg"
+        content="https://gpseoulwebserver.co.kr/asset/images/2024/yonggitest/yonggitest-main-0530.jpg"
       />
     </Head>
   );
