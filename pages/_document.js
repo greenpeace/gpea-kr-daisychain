@@ -25,6 +25,11 @@ class NextDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.numberOfResponses = parseInt('%%=v(@NumberOfResponses)=%%', 10);`,
+            }}
+          />
           {/** MC_FORM_STARTS  */}
           <form method="post" id="mc-form" style={{ display: 'none' }}>
             <input
