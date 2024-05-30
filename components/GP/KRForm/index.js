@@ -55,8 +55,8 @@ const MyForm = (props) => {
     setSuggestion,
     initSuggestion,
     suggestion,
-    numberOfResponses,
-    numberOfTarget,
+    // numberOfResponses,
+    // numberOfTarget,
   } = props;
   //const [birthDateYear, setBirthDateYear] = useState([]);
   const [progressNumber, setProgressNumber] = useState(0);
@@ -78,21 +78,21 @@ const MyForm = (props) => {
   //   initSuggestion();
   // }, []);
 
-  useEffect(() => {
-    const currentNumber = numberOfResponses;
-    const currentNumberOfTarget = numberOfTarget ? numberOfTarget : 10000;
-    const number =
-      Math.round((currentNumber / currentNumberOfTarget) * 10000) / 100;
-    if (isNaN(number)) {
-      return;
-    }
+  // useEffect(() => {
+  //   const currentNumber = numberOfResponses;
+  //   const currentNumberOfTarget = numberOfTarget ? numberOfTarget : 10000;
+  //   const number =
+  //     Math.round((currentNumber / currentNumberOfTarget) * 10000) / 100;
+  //   if (isNaN(number)) {
+  //     return;
+  //   }
 
-    const timer = () => setTimeout(() => setProgressNumber(`${number}%`), 1000);
-    const timerId = timer();
-    return () => {
-      clearTimeout(timerId);
-    };
-  }, [numberOfResponses]);
+  //   const timer = () => setTimeout(() => setProgressNumber(`${number}%`), 1000);
+  //   const timerId = timer();
+  //   return () => {
+  //     clearTimeout(timerId);
+  //   };
+  // }, [numberOfResponses]);
 
   // //setting additional fileds for formik
   // useEffect(() => {
@@ -157,11 +157,21 @@ const MyForm = (props) => {
         .replace(/(\-{1,2})$/g, "");
     }
   };
+
+  const [numberOfResponses, setNumberOfResponses] = useState(0);
+  useEffect(() => {
+    const numberOfResponsesFromWindow = window.numberOfResponses;
+    if (!isNaN(numberOfResponsesFromWindow)) {
+      setNumberOfResponses(numberOfResponsesFromWindow);
+    }
+  }, []);
+
+  const formatter = new Intl.NumberFormat('en-US');
   
   return (
     <Box py="8" px="4">
       <Stack spacing="4">
-        {formContent.signed_number && numberOfResponses && numberOfTarget ? (
+        {/* {formContent.signed_number && numberOfResponses && numberOfTarget ? (
           <Box>
             <Box
               borderRadius={'20px'}
@@ -189,7 +199,7 @@ const MyForm = (props) => {
               </Text>
             </Box>
           </Box>
-        ) : null}
+        ) : null} */}
         <Box>
           <Heading
             as="h2"
@@ -203,7 +213,7 @@ const MyForm = (props) => {
             as="p"
             {...paragraphProps}
             mb="0"
-            dangerouslySetInnerHTML={{ __html: formContent.form_description }}
+            dangerouslySetInnerHTML={{ __html: String(formContent.form_description).replace('%s', formatter.format(numberOfResponses)) }}
           />
         </Box>
         <Form onSubmit={handleSubmit}>
