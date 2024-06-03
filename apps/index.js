@@ -25,7 +25,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/31016010-forest1.jpg';
+import heroBannerImage from './images/forest-hero.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -93,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '보호되지 않는 보호지역을 지켜주세요.',
+                    '보호되지 않는 국내 보호지역을 지켜주세요.',
                   description: [''],
                 }}
               />

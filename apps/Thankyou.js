@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, Text } from '@chakra-ui/react';
+import { Box, Heading, Image, Text } from '@chakra-ui/react';
 import {
   headingProps,
   paragraphProps,
@@ -7,6 +7,8 @@ import {
   linePropsLast
 } from '@common/styles/components/contentStyle';
 import { useSelector } from 'react-redux';
+
+import Image01 from './images/forest-thankyou.jpg';
 
 const Thankyou = () => {
   const theme = useSelector((state) => state?.theme?.data);
@@ -20,9 +22,9 @@ const Thankyou = () => {
        정부의 잘못된 정책을 바로잡고, 우리에게 소중한 자연 생태계를 지켜낼 수 있도록 후원으로 동참해주세요.
       </Text>
 
-      <Text as="b" {...paragraphProps}>
+      <Heading {...headingProps} color={`theme.${themeInterests}`}>
         지금 후원을 시작해 주시면,
-      </Text>
+      </Heading>
 
       <Text as="li" {...lineProps}>
        보호지역 파괴 현장을 항공 위성 카메라 및 과학조사를 통해서 밝혀내고 폭로할 수 있습니다.
@@ -40,9 +42,13 @@ const Thankyou = () => {
        국제 생물다양성 협약을 정부가 제대로 이행하는지 시민봉사자를 구성하여 지속적 관리 감독 활동을 펼칠 수 있습니다.
       </Text>
       
-      <Text as="b" {...paragraphProps}>
+      <Box {...paragraphProps}>
+        <Image src={Image01} layout="fill" alt="독일 브란덴부르크의 더 나은 산림 관리를 위한 시위" />
+      </Box>
+
+      <Heading {...headingProps} color={`theme.${themeInterests}`}>
         그린피스가 산림보호를 위해 걸어온 길
-      </Text>
+      </Heading>
 
       <Text as="li" {...lineProps}>
        2015년, 3M 지속가능한 제지 구매 방침 선언
