@@ -93,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '음료 기업이 <br/>일회용 플라스틱 쓰레기를 <br/>더이상 생산하지 않아야 합니다.',
+                    '음료 기업이 일회용 플라스틱 쓰레기를 더이상 생산하지 않아야 합니다.',
                   description: [''],
                 }}
               />
