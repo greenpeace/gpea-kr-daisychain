@@ -65,6 +65,7 @@ export default function Index({
               width="100%"
               objectFit="cover"
               objectPosition={objectPosition}
+              alt={content.alt}
             />
           </picture>
         </Box>
