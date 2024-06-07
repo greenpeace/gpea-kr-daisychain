@@ -23,7 +23,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/GP0STSQBC_Medium_res.jpg';
+import heroBannerImage from './images/v3-main.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -75,7 +75,7 @@ function Index() {
                     ? signup?.data?.LastName
                     : '그린피스 서포터즈'
                   }님, 청원에 함께해 주셔서 감사합니다.`,
-                description: [ '보내주신 청원으로 일회용 플라스틱 무분별한 생산과 사용규제를 적극 요구하여 깨끗하고 안전한 지구를 만드는데 노력하겠습니다. ' ],
+                description: [ '보내주신 청원으로 일회용 플라스틱의 무분별한 생산과 사용규제를 적극 요구하여 깨끗하고 안전한 지구를 만드는데 노력하겠습니다. ' ],
               }}
             />
           ) : (

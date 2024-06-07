@@ -22,11 +22,11 @@ const SEO = () => {
       </title>
       <meta
         property="og:title"
-        content="그린피스 | 국제 플라스틱 협약 체결을 지지해주세요"
+        content="2024 국제 플라스틱 협약 체결을 지지해주세요 | 그린피스"
       />
       <meta
         name="description"
-        content="국제 플라스틱 협약은 플라스틱 없는 미래를 향한 큰 힘이 될 것입니다. 이 협약을 위해 여러분의 힘이 필요합니다."
+        content="2024 국제 플라스틱 협약은 플라스틱 없는 미래를 향한 큰 힘이 될 것입니다. 이 협약을 위해 여러분의 힘이 필요합니다."
       />
       <meta
         property="og:description"
@@ -34,7 +34,7 @@ const SEO = () => {
       />
       <meta
         name="keywords"
-        content="플라스틱제로, 제로웨이스트, 미니멀라이프, 친환경제품, 환경보호, 국제플라스틱협약, 국제플라스틱조약"
+        content="플라스틱제로, 제로웨이스트, 미니멀라이프, 친환경제품, 환경보호, 국제플라스틱협약, 국제플라스틱조약, 국제협약, ESG, 유엔플라스틱협약, 2024, INC4, INC5, 부산국제회의, 국제회의"
       />
       <meta
         property="og:image"

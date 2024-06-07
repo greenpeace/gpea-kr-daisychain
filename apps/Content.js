@@ -14,7 +14,7 @@ const Content = ({ theme }) => {
   return (
     <div>
       <Heading {...headingProps} color={`theme.${themeInterests}`}>
-        '모두'에게 적용되는 '규칙'이 없기 때문입니다.
+      일회용 플라스틱이 무분별하게 생산, 사용되는 이유는 ‘규제’가 없기 때문입니다.
       </Heading>
 
       <Text as="p" {...paragraphProps}>
@@ -34,11 +34,12 @@ const Content = ({ theme }) => {
       </Box>
 
       <Text as="p" {...paragraphProps}>
-        문제의 심각성을 인지한 각국 정부는 한자리에 모여 플라스틱 오염을 멈추기 위한 '국제 플라스틱 협약'을 논의하고 있습니다.
+        문제의 심각성을 인지한 각국 정부는 한자리에 모여 플라스틱 오염을 멈추기 위한 ‘국제 플라스틱 협약‘ 을 논의하고 있습니다.
       </Text>
 
-      <Text as="p" {...paragraphProps}>
+      <Heading {...headingProps} color={`theme.${themeInterests}`}>
         여러분의 청원으로,
+      </Heading>
         <Text as="li" {...lineProps}>
           플라스틱의 생산 단계에서의 석유 사용 절감
         </Text>
@@ -48,7 +49,6 @@ const Content = ({ theme }) => {
         <Text as="li" {...lineProps}>
           리필 및 재사용 시스템 구축
         </Text>
-      </Text>
 
       <Text as="p" {...paragraphProps}>
         위 사항을 각국 정부가 심도 있게 논의할 수 있습니다.
