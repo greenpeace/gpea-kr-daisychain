@@ -18,11 +18,11 @@ const SEO = () => {
       /> */}
       {/* title */}
       <title>
-        국제 플라스틱 협약 체결을 지지해주세요 | 그린피스
+        그린피스 | 2024 국제 플라스틱 협약 체결을 지지해주세요
       </title>
       <meta
         property="og:title"
-        content="2024 국제 플라스틱 협약 체결을 지지해주세요 | 그린피스"
+        content="그린피스 | 2024 국제 플라스틱 협약 체결을 지지해주세요"
       />
       <meta
         name="description"
@@ -30,7 +30,7 @@ const SEO = () => {
       />
       <meta
         property="og:description"
-        content="국제 플라스틱 협약은 플라스틱 없는 미래를 향한 큰 힘이 될 것입니다. 이 협약을 위해 여러분의 힘이 필요합니다."
+        content="2024 국제 플라스틱 협약은 플라스틱 없는 미래를 향한 큰 힘이 될 것입니다. 이 협약을 위해 여러분의 힘이 필요합니다."
       />
       <meta
         name="keywords"

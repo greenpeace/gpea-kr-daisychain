@@ -4,10 +4,11 @@ import { Box, Heading, Image, Text } from '@chakra-ui/react';
 import {
   headingProps,
   paragraphProps,
-  lineProps
+  ulLineProps,
+  linePropsLast
 } from '@common/styles/components/contentStyle';
 
-import Image01 from './images/GP0STT1HC_Medium_res.jpg';
+import Image01 from './images/v3-content.jpg';
 
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
@@ -30,7 +31,7 @@ const Content = ({ theme }) => {
       </Text>
 
       <Box {...paragraphProps}>
-        <Image src={Image01} layout="fill" alt="Greenpeace" />
+        <Image src={Image01} layout="fill" alt="플라스틱의 심각성을 보여주는 고래 모양의 조형물" />
       </Box>
 
       <Text as="p" {...paragraphProps}>
@@ -40,15 +41,17 @@ const Content = ({ theme }) => {
       <Heading {...headingProps} color={`theme.${themeInterests}`}>
         여러분의 청원으로,
       </Heading>
-        <Text as="li" {...lineProps}>
+      <ul>
+        <Text as="li" {...ulLineProps}>
           플라스틱의 생산 단계에서의 석유 사용 절감
         </Text>
-        <Text as="li" {...lineProps}>
+        <Text as="li" {...ulLineProps}>
           플라스틱을 필요 이상으로 만들어내는 생산자에게 적절한 책임 부과
         </Text>
-        <Text as="li" {...lineProps}>
+        <Text as="li" {...linePropsLast}>
           리필 및 재사용 시스템 구축
         </Text>
+      </ul>
 
       <Text as="p" {...paragraphProps}>
         위 사항을 각국 정부가 심도 있게 논의할 수 있습니다.
