@@ -25,7 +25,7 @@ import Thankyou from './Thankyou';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBanner from './images/yonggitest-main-0530.jpg';
+import heroBanner from './images/reboot-main.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -93,7 +93,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '기후위기를 가속화하는 LNG 발전소 신규 건설 멈춰야 합니다!',
+                    '기후위기를 가속화하는 LNG 발전소 신규 건설 <br/>멈춰야 합니다!',
                   description: [''],
                   alt: '가스산업에 항의하기 위해 비엔나에서 열린 그린피스 행진(2024년 3월)',
                 }}

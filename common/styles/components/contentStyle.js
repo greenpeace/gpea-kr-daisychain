@@ -13,11 +13,15 @@ export const paragraphProps = {
 export const lineProps = {
   lineHeight: 1.5,
   marginTop:'10px',
+  listStyleType: 'disc',
+  marginLeft: '1rem',
 };
 export const linePropsLast = {
   lineHeight: 1.5,
   mb:6,
   marginTop:'10px',
+  listStyleType: 'disc',
+  marginLeft: '1rem',
 };
 export const captionProps = {
   lineHeight: 1.5,

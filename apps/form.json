@@ -1,6 +1,6 @@
 {
-  "form_header": "정부의 잘못된 정책을 바로 잡고 우리나라 산업의 탄소배출을 줄일 수 있는 활동에 함께해 주셔서 감사합니다.",
-  "form_description": "오직 여러분의 후원으로 그린피스는 기후위기 문제 실태를 알리고, 과학적 연구와 조사로 해결책을 제시할 수 있습니다.",
+  "form_header": "한국 정부에 LNG 발전소 건설을 멈추도록 요구해 주세요.",
+  "form_description": "재생에너지 중심의 '탄소중립' 반도체 클러스터를 만들어주세요.",
   "form_remind": "",
   "signed_number": "已聯署人數",
 
@@ -13,6 +13,7 @@
   "label_phone": "전화번호",
   "label_phone_optional": "전화번호（선택）",
   "label_year_of_birth": "출생년도",
+
   "label_year_of_birth_optional": "출생년도（선택）",
   "label_newsletter_all": "모든 항목 선택하기",
   "label_newsletter_donate": "(필수) 그린피스 후원안내 수신동의",

@@ -10,8 +10,8 @@ import {
 } from '@common/styles/components/contentStyle';
 
 import Image01 from './images/reboot-content1.jpg';
-import Image02 from './images/yonggitest-content1-0530.jpg';
-import Image03 from './images/yonggitest-content1-0530.jpg';
+import Image02 from './images/reboot-content2.jpg';
+import Image03 from './images/reboot-content3.jpg';
 
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
@@ -27,11 +27,11 @@ const Content = ({ theme }) => {
       </Text>
       
       <Box {...paragraphProps}>
-        <Image src={Image01} layout="fill" alt="" />
+        <Image src={Image01} layout="fill" alt="이탈리아 밀라노에서 열린 세계 최대규모의 가스업계 회의(가스텍) 개막식에 항의하기 위해 열기구를 이용한 그린피스 비폭력직접행동 (2022년 9월)" />
       </Box>
 
       <Heading {...headingProps} color={`theme.${themeInterests}`}>
-      정부는 연료의 생산-수송-사용 모든 과정에서 메탄을 내뿜는 LNG 발전소 30여 기를 2036년까지 새로 건설할 계획을 가지고 있습니다.
+      정부는 연료의 생산-수송-사용 모든 과정에서 메탄을 내뿜는 LNG 발전소 30여 기를 2038년까지 새로 건설할 계획을 가지고 있습니다.
       </Heading>
 
       <Text as="p" {...paragraphProps}>
@@ -51,7 +51,7 @@ const Content = ({ theme }) => {
       </Box>
 
       <Heading {...headingProps} color={`theme.${themeInterests}`}>
-      그린피스는 정부에 재생에너지 중심의 ‘탄소 제로’ 용인 시스템반도체 클러스터 조성을 요구합니다. 
+      그린피스는 정부에 재생에너지 중심의 '탄소중립' 용인 시스템반도체 클러스터 조성을 요구합니다. 
       </Heading>
 
       <Text as="p" {...paragraphProps}>
@@ -67,7 +67,7 @@ const Content = ({ theme }) => {
       </Text>
 
       <Box {...paragraphProps}>
-        <Image src={Image03} layout="fill" alt="“출구” : 러시아 코추베브스카야 풍력 발전소를 배경으로 한 재생에너지 캠페인 활동(2023년 4월)" />
+        <Image src={Image03} layout="fill" alt="“그린피스 등 15개 네크워크 단체가 크라우드 펀딩을 통해 태국 공공시설에 설치한 태양광 발전 시설 모습(2020년 1월) " />
       </Box>
     </>
   );
