@@ -26,11 +26,11 @@ const SEO = () => {
       />
       <meta
         name="description"
-        content="한국 정부에 재생에너지 중심의 ‘탄소 제로’ 반도체 클러스터를 만들 것을 요구해 주세요."
+        content="한국 정부에 LNG 발전소 건설을 멈추도록 요구해 주세요."
       />
       <meta
         property="og:description"
-        content="한국 정부에 재생에너지 중심의 ‘탄소 제로’ 반도체 클러스터를 만들 것을 요구해 주세요."
+        content="한국 정부에 LNG 발전소 건설을 멈추도록 요구해 주세요."
       />
       <meta name="keywords" content="" />
       <meta
