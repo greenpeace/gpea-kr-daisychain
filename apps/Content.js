@@ -10,7 +10,8 @@ import {
 import Accordion from '@components/Accordion/Accordion';
 
 import Image01 from './images/GP0STUHX5_Medium.jpg';
-import Image02 from './images/GP0STUHX5_Medium.jpg';
+import Image02 from './images/general_page_content1.gif';
+import Image03 from './images/template_test-content2.jpeg';
 
 const Content = ({ theme }) => {
   const themeInterests = theme.interests;
@@ -98,7 +99,7 @@ const Content = ({ theme }) => {
       </ul>
 
       <Box {...paragraphProps}>
-        <Image src={Image01} layout="fill" alt="Greenpeace" />
+        <Image src={Image02} layout="fill" alt="Greenpeace" />
       </Box>
 
       <Heading {...headingProps} color={`theme.${themeInterests}`} style={{marginTop:30}}>
@@ -118,8 +119,12 @@ const Content = ({ theme }) => {
       </Text>
 
       <Box {...paragraphProps}>
-        <Image src={Image01} layout="fill" alt="Greenpeace" />
+        <Image src={Image03} layout="fill" alt="Greenpeace" />
       </Box>
+
+      <Text as="p" {...paragraphProps}>
+        지구를 위한 변화 만들기<br/>여러분의 후원으로 그린피스는 전 세계 환경을 보호할 수 있습니다
+      </Text>
       
       {/* <Accordion headerTitle={<><Heading {...headingProps} color={`theme.${themeInterests}`}>자주 하는 질문</Heading></>} items={faqItems} />
       

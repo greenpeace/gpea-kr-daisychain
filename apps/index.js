@@ -20,7 +20,7 @@ import Content from './Content';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/GP0STUHX5_Medium.jpg';
+import heroBannerImage from './images/c64528da-gp0stpr4h_medium_res_black_text.jpg';
 
 function Index() {
   const dispatch = useDispatch();
