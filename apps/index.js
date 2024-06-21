@@ -13,17 +13,14 @@ import FormContainer from '@containers/formContainer';
 import PetitionFooter from '@containers/petitionFooter';
 // Import custom components
 import HeroBanner from '@components/ResponsiveBanner/hero';
-import ThanksBanner from '@components/ResponsiveBanner/thanks';
 import DonationModule from '@components/GP/DonationModule';
-import SignupForm from '@components/GP/KRForm';
 import ScrollToTargetButton from '@components/ScrollToTargetButton/ScrollToTargetButton';
 import Content from './Content';
-import Thankyou from './Thankyou';
 
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/beestro-main.jpg';
+import heroBannerImage from './images/GP0STUHX5_Medium.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -69,8 +66,8 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '꿀벌 식당 캠페인에 후원으로 함께 해주세요.',
-                  description: ['벌의 집단폐사가 불러올 생태계 붕괴와 식량난 위기. 아직 막을 수 있습니다. '],
+                    '위기에 처한 지구, 더 늦기 전에 지켜주세요!',
+                  description: [''],
                 }}
               />
             ); 
