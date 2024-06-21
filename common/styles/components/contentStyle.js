@@ -2,6 +2,7 @@ export const headingProps = {
   lineHeight: 1.2,
   mb: 6,
   fontSize: { base: 'xl', md: '2xl' },
+  color: '#008fe2',
 };
 export const paragraphProps = {
   lineHeight: 1.8,

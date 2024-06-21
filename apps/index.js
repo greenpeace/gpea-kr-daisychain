@@ -67,7 +67,7 @@ function Index() {
                         ? theme?.params?.headline_prefix + '<br/>'
                         : ''
                     }` +
-                    '위기에 처한 지구, 더 늦기 전에 지켜주세요!',
+                    '위기에 처한 지구,<br/> 더 늦기 전에 지켜주세요!',
                   description: [''],
                 }}
               />
