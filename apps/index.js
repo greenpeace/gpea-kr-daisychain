@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {BrowserView, MobileView, isBrowser, isMobile} from "react-device-detect";
 import * as formActions from 'store/actions/action-types/form-actions';
@@ -40,6 +40,19 @@ function Index() {
   
   console.log('isMobile', isMobile)
 
+  // defaultImage 상태 설정
+  const [defaultImage, setDefaultImage] = useState(heroBannerImage);
+
+  // isMobile 값이 변경될 때마다 실행
+  useEffect(() => {
+    if (isMobile) {
+      setDefaultImage(heroBannerImage_m); // 모바일용 이미지로 설정
+    } else {
+      setDefaultImage(heroBannerImage); // 기본 이미지로 설정
+    }
+  }, [isMobile]); // isMobile 값이 변경될 때마다 효과를 다시 실행
+
+
   useEffect(() => {
     if(window.addGclid && !gclid){window.addGclid();}
   }, []);
@@ -57,9 +70,7 @@ function Index() {
         {(() => { 
             return (
               <HeroBanner
-                defaultImage={
-                  isMobile ? heroBannerImage_m : heroBannerImage
-                }
+                defaultImage={defaultImage}
                 content={{
                   title:
                     `${

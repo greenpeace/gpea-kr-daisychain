@@ -8,7 +8,6 @@ import {
   linePropsLast
 } from '@common/styles/components/contentStyle';
 
-import Image01 from './images/GP0STUHX5_Medium.jpg';
 import Image02 from './images/general_page_content1.gif';
 import Image03 from './images/template_test-content2.jpeg';
 
@@ -17,7 +16,7 @@ const Content = ({ theme }) => {
 
   return (
     <div>
-      <Heading {...headingProps} color={`theme.${themeInterests}`}>
+      <Heading {...headingProps}>
         전 지구적 환경 문제로 신음하는 지구
       </Heading>
 
@@ -33,7 +32,7 @@ const Content = ({ theme }) => {
         하지만 아직 해결할 시간이 있습니다.
       </Text>
 
-      <Heading {...headingProps} color={`theme.${themeInterests}`}>
+      <Heading {...headingProps}>
         반세기 동안 지구를 지켜온 국제환경단체, 그린피스
       </Heading>
 
@@ -45,7 +44,7 @@ const Content = ({ theme }) => {
         북극과 남극 보호, 산림 보호, 해양 보호, 기후위기, 플라스틱 제로, 건강한 삶. 6가지 프로젝트를 최우선으로 지속 가능한 지구를 위해 활동합니다.
       </Text>
 
-      <Heading {...headingProps} color={`theme.${themeInterests}`}>
+      <Heading {...headingProps}>
         그린피스가 변화를 만드는 방법
       </Heading>
 
@@ -72,7 +71,7 @@ const Content = ({ theme }) => {
         <Image src={Image03} layout="fill" alt="Greenpeace" />
       </Box>
 
-      <Heading {...headingProps} color={`theme.${themeInterests}`} style={{marginTop:30}}>
+      <Heading {...headingProps} style={{marginTop:30}}>
         지구를 위한 변화는 긴 시간의 노력이 필요합니다.
       </Heading>
 
@@ -80,7 +79,7 @@ const Content = ({ theme }) => {
         그린피스는 지난 50년 동안 오직 개인 후원자의 후원금만으로 스스로 목소리를 낼 수 없는 동물들과 자연을 대변해 지구를 위한 변화를 만들어왔습니다. 
       </Text>
 
-      <Heading {...headingProps} color={`theme.${themeInterests}`} style={{marginTop:30}}>
+      <Heading {...headingProps} style={{marginTop:30}}>
         한 사람의 힘으로는 힘들지만, 우리 모두가 함께라면 해낼 수 있습니다.
       </Heading>
 
