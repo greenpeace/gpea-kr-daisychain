@@ -20,7 +20,8 @@ import Content from './Content';
 import formContent from './form';
 import SEO from './SEO';
 // Import static
-import heroBannerImage from './images/c64528da-gp0stpr4h_medium_res_black_text.jpg';
+import heroBannerImage from './images/main_hero.jpg';
+import heroBannerImage_m from './images/main_hero_m.jpg';
 
 function Index() {
   const dispatch = useDispatch();
@@ -57,7 +58,7 @@ function Index() {
             return (
               <HeroBanner
                 defaultImage={
-                  theme?.params?.hero_image_desktop ?? heroBannerImage
+                  isMobile ? heroBannerImage_m : heroBannerImage
                 }
                 content={{
                   title:
