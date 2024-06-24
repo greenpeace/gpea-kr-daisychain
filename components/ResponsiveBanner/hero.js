@@ -76,7 +76,7 @@ export default function Index({
             right={0}
             left={0}
             bottom={0}
-            bgColor={'rgba(0,0,0,0.5)'}
+            style={{height: '20rem', background: 'linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0))' }}
           />
         )}
       </Box>
