@@ -9,7 +9,7 @@ import {
 } from '@common/styles/components/contentStyle';
 import { useSelector } from 'react-redux';
 
-import Image01 from './images/yonggitest-content2-0521.jpg';
+import Image02 from './images/yonggitest-content2-0521.jpg';
 
 const Thankyou = () => {
   const theme = useSelector((state) => state?.theme?.data);
@@ -33,7 +33,7 @@ const Thankyou = () => {
       </Text>
 
       <Box {...paragraphProps}>
-        <Image src={Image01} layout="fill" alt="강력한 국제 플라스틱 협약을 요구하고 있는 그린피스 캠페이너" />
+        <Image src={Image02} layout="fill" alt="강력한 국제 플라스틱 협약을 요구하고 있는 그린피스 캠페이너" />
       </Box>
 
       <Text as="p" {...paragraphProps}>
